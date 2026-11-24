@@ -98,5 +98,5 @@ Rule 13(8) suggests getting examined by a government civil surgeon *before apply
 |---|---|
 | Now (2026–27) | Get a full eye test and keep the prescription. If you want PSP, check your uncorrected vision against Police Standards I and II |
 | Spring 2028 (after the written exam) | Routine check: blood pressure, BMI, urine, blood count, dental. Fix anything fixable before the written result |
-| When the written result comes out | Watch fpsc.gov.pk daily for the medical schedule. Book leave from your Saudi job to cover the medical, the psychological assessment and the viva. They are separate dates, possibly weeks apart |
+| When the written result comes out | Watch fpsc.gov.pk daily for the medical schedule. If you work, or live abroad, book leave to cover the medical, the psychological assessment and the viva. They are separate dates, possibly weeks apart |
 | On the day | Arrive early, fasting only if the call letter says so (not verified that it does) |

@@ -30,7 +30,7 @@ Compiled 24 Nov 2026. Source numbers point to `09-Sources.md`. This file covers 
 
 ### Before day 1 (Derived, plus logistics from the rules)
 
-- **Arrive in Pakistan at least 7 days before the Essay.** You are flying in from Saudi Arabia. Leave room for a delayed flight, jet lag (2 hours' difference, so minor) and a visit to the centre the day before. (Opinion)
+- **Arrive in Pakistan at least 7 days before the Essay.** If you are flying in from abroad, leave room for a delayed flight, jet lag and a visit to the centre the day before. (Opinion)
 - **Stay close to the centre.** Long daily commutes over 12 days wear you down. (Opinion)
 - **Bring:** admission certificate (several prints), CNIC, the same pens, pencils, ruler, the allowed calculator model for Applied Maths/Statistics, and a watch without smart functions. (Derived from Rule 16 and the admission certificate norms)
 

@@ -7,7 +7,7 @@ Compiled 24 Nov 2026. Source numbers point to `09-Sources.md`. The full study pa
 Weak. I found **no detailed first-hand MPT account** I could open: Reddit cannot be reached by my tools, cssforum.com.pk pages would not load, and searches returned prep sites. Most of what follows is either:
 
 - **Verified** format facts from FPSC [S1, S2], or
-- **Coaching** advice that repeats across several sites [S37, S38], or
+- **Coaching** advice that repeats across several sites [S37], or
 - **Derived**: my own reasoning from the verified format.
 
 The MPT is a pass/fail screen with a high pass rate, so this evidence gap matters less than it would for the essay or the viva.
@@ -22,7 +22,7 @@ The MPT is a pass/fail screen with a high pass rate, so this evidence gap matter
 | 200 minutes for 200 MCQs (same Dawn report) | About one minute per question | [S2] |
 | Pass valid for the same year only | Failing costs a whole year | [S2] |
 | MPT does not use one of your three written attempts | Low-risk test; no reason to skip it | [S2] |
-| Centre cannot be changed after selection | Choose a city you can certainly reach. For you, the Saudi flight plan decides this | [S2] |
+| Centre cannot be changed after selection | Choose a city you can certainly reach. If you live abroad, your flight plan decides this | [S2] |
 | Admission certificate on the FPSC site at least 10 days before | Download and print it as soon as it appears | [S2] |
 
 ## Strategy (coaching advice and derived)
@@ -40,14 +40,14 @@ The MPT is a pass/fail screen with a high pass rate, so this evidence gap matter
 |---|---|---|
 | Missing the 2–3-week online registration window (early to late August) | Set a reminder for 1 August 2027 and check fpsc.gov.pk weekly in July | Verified dates for CSS 2027 [S2] |
 | The test date moving | CSS 2027's MPT moved from 27 Sep to 10 Oct 2026 because of a protest. Keep the travel plan flexible | Verified [S2] |
-| Booking a single-day trip from Saudi Arabia | Arrive two days early. If the date moves, you need leave flexibility | Derived |
+| Booking a single-day trip from abroad | Arrive two days early. If the date moves, you need leave flexibility | Derived |
 | Over-preparing for the MPT at the expense of the written exam | The written exam starts about 3–4 months after the MPT. The essay and précis need that time | Derived; `01-Plan/Study-Schedule.md` already does this |
 | Assuming an MPT pass carries over if you skip the written exam | It does not | Verified [S2] |
 | Forgetting the written exam application | The written exam has a separate application window (10–25 Nov for CSS 2027) and a hard copy deadline (early Dec) | Verified [S2] |
 
 ## What passed candidates and prep sites agree on
 
-- Time management decides the MPT more than knowledge does [S37, S38]. (Coaching; repeated across sources)
+- Time management decides the MPT more than knowledge does [S37]. (Coaching; repeated across sources)
 - Past MPT-style MCQs are the best practice material [S37]. FPSC does not publish MPT past papers on its new site, as far as I could find, so practice sets come from prep sites. (Coaching)
 - Take one full timed mock at 200 minutes in the last fortnight. The pack in `05-MPT-Screening-Test/09-Mock-Tests/` has them. (Derived)
 

@@ -99,7 +99,7 @@ These come from FPSC's psychological assessment and viva instructions as quoted 
 - [ ] The signed online application form, with attested photocopies of every supporting document
 - [ ] Educational profile proforma and undertaking (downloaded from FPSC and filled in)
 - [ ] Two recent passport-size photographs (more is safer)
-- [ ] Proof of extra-curricular activities, job experience and publications. FPSC asks for these. For you: employment letter from the Saudi employer, FAST certificates, any project or open-source evidence.
+- [ ] Proof of extra-curricular activities, job experience and publications. FPSC asks for these. For example: an employment letter, university certificates, any project or open-source evidence.
 - [ ] Final Preference Form (FPSC posts it with the viva schedules [S4])
 - [ ] Stationery: blue ballpoint, lead pencil, sharpener, eraser (one older sheet asks for two 2B pencils [S9])
 
