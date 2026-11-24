@@ -67,7 +67,7 @@ Every pack starts with `00-How-to-Use-This-Pack.md` and ends with `COVERAGE.md`,
 | Current Affairs | 70 files, ~100k words | 56 backgrounders, 15 model answers, 15 maps to draw, 200 MCQs | Changes fastest; about 180 `[verify]` lines. Update weekly from your log |
 | Pakistan Affairs | 45 files, ~110k words | 35 notes files, 15 model answers, 300 MCQs, timeline | 2026 events and economy figures: update after the June 2027 Economic Survey |
 | Islamic Studies | 18 files, ~111k words | 15 model answers, ~300 verse and ~200 hadith references (script-checked), 300 MCQs | 7 narrations flagged `[verify]`; check any reference on quran.com / sunnah.com before memorising |
-| Optional subjects | — | — | Not built yet: choose your five in `01-Plan/Optional-Subjects.md` |
+| Optional subjects (8 packs) | Political Science, Public Administration, Gender Studies, Criminology, Journalism, Applied Maths, Statistics, English Literature | Notes, model answers, ~1,330 MCQs, ~1,230 written questions | Choose a combination in `07-Optional-Papers/00-Combinations.md`; model answers run ~1,000 words, a little short of exam length |
 
 **Quality checks done:**
 - About 80 random MCQs across the banks were checked by hand, and every key was correct.
