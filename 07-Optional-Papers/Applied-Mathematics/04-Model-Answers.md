@@ -1,12 +1,12 @@
 # Worked Solutions — Applied Mathematics (CSS)
 
-**80 exam-style problems with full step-by-step solutions**, covering every syllabus section. Most are modelled on real CSS questions from 2016–2026 (the source year is shown); some are new practice problems of the same type. Every numerical answer was recomputed in python3 (pure Python, with numerical checks such as substituting the answer back into the equation). The scripts are listed in `COVERAGE.md`.
+**94 exam-style problems with full step-by-step solutions**, covering every syllabus section. Most are modelled on real CSS questions from 2016–2026 (the source year is shown); some are new practice problems of the same type. Every numerical answer was recomputed in python3 (pure Python, with numerical checks such as substituting the answer back into the equation). The scripts are listed in `COVERAGE.md`.
 
 **How to use.** Cover the solution, attempt the problem with a timer (a 10-mark part ≈ 17 minutes), then mark yourself line by line. Copy the *layout*: statement of method → formula → working → boxed answer → one-line check.
 
 **How a CSS maths answer is marked (practical guide).** Each 10-mark part is roughly: correct method/formula stated (2–3), correct working (4–5), correct final answer (1–2), check/interpretation (≤1). A wrong final number with correct method still earns most of the marks. A bare answer earns almost nothing.
 
-Contents: A. Vector Calculus (P1–P12) · B. Statics (P13–P21) · C. Dynamics (P22–P32) · D. ODEs (P33–P52) · E. Fourier Series and PDEs (P53–P64) · F. Numerical Methods (P65–P80).
+Contents: A. Vector Calculus (P1–P12) · B. Statics (P13–P21) · C. Dynamics (P22–P32) · D. ODEs (P33–P56) · E. Fourier Series and PDEs (P57–P69) · F. Numerical Methods (P70–P94).
 
 ---
 
@@ -722,3 +722,316 @@ So the ladder slips when the man is 50 ft up (5/7 of its length).
 2. X = Ae^{kx}; T′/T = (k − 1)/2 ⇒ T = Be^{(k−1)t/2}.
 3. u = Ce^{kx + (k−1)t/2}. At t = 0: Ce^{kx} = 6e^{−3x} ⇒ C = 6, k = −3.
 4. **u = 6e^{−3x−2t}**. Check: u_x = −3u; 2u_t + u = −4u + u = −3u ✓.
+
+---
+
+# F. Numerical Methods
+
+All trig in **radians**. Values carried to 6 decimals.
+
+### P70. (CSS 2022) Use bisection on f(x) = x³ + 4x² − 10 in [1, 2] to accuracy 10⁻⁴.
+
+**Solution.**
+1. f(1) = −5 < 0, f(2) = 14 > 0 ⇒ a root in [1, 2].
+2. Steps needed: (b − a)/2ⁿ⁺¹ < 10⁻⁴ ⇒ 2ⁿ⁺¹ > 10⁴ ⇒ n ≥ 13.
+3. Table (c = midpoint; keep the half where the sign changes):
+
+| n | a | b | c | f(c) |
+|---|---|---|---|---|
+| 1 | 1.000000 | 2.000000 | 1.500000 | +2.375000 |
+| 2 | 1.000000 | 1.500000 | 1.250000 | −1.796875 |
+| 3 | 1.250000 | 1.500000 | 1.375000 | +0.162109 |
+| 4 | 1.250000 | 1.375000 | 1.312500 | −0.848389 |
+| 5 | 1.312500 | 1.375000 | 1.343750 | −0.350983 |
+| 6 | 1.343750 | 1.375000 | 1.359375 | −0.096409 |
+| 7 | 1.359375 | 1.375000 | 1.367188 | +0.032356 |
+| 8 | 1.359375 | 1.367188 | 1.363281 | −0.032150 |
+| 9 | 1.363281 | 1.367188 | 1.365234 | +0.000072 |
+| 10 | 1.363281 | 1.365234 | 1.364258 | −0.016047 |
+| 11 | 1.364258 | 1.365234 | 1.364746 | −0.007989 |
+| 12 | 1.364746 | 1.365234 | 1.364990 | −0.003959 |
+| 13 | 1.364990 | 1.365234 | 1.365112 | −0.001944 |
+
+4. After 13 steps the bracket is [1.365112, 1.365234] (width 1.2 × 10⁻⁴); midpoint **x ≈ 1.3652** (true root 1.365230).
+
+### P71. (CSS 2025) Use Newton–Raphson to solve x − cos x = 0 on [0, π/2] to within 10⁻⁴.
+
+**Solution.**
+1. f = x − cos x, f′ = 1 + sin x. Formula xₙ₊₁ = xₙ − (xₙ − cos xₙ)/(1 + sin xₙ).
+2. x₀ = π/4 = 0.785398 (f changes sign on [0, π/2]: f(0) = −1, f(π/2) = 1.571).
+
+| n | xₙ | f(xₙ) | f′(xₙ) | xₙ₊₁ |
+|---|---|---|---|---|
+| 0 | 0.785398 | 0.078291 | 1.707107 | 0.739536 |
+| 1 | 0.739536 | 0.000755 | 1.673945 | 0.739085 |
+| 2 | 0.739085 | 0.000000 | 1.673612 | 0.739085 |
+
+3. |x₃ − x₂| < 10⁻⁶. **x = 0.7391**.
+
+### P72. (CSS 2026) Set up Newton's iteration for √N and evaluate √14.
+
+**Solution.**
+1. √N is the positive root of f(x) = x² − N, f′ = 2x.
+2. xₙ₊₁ = xₙ − (xₙ² − N)/(2xₙ) = **½(xₙ + N/xₙ)** (Heron's formula).
+3. N = 14, x₀ = 4 (since 4² = 16 is close):
+ x₁ = ½(4 + 3.5) = 3.750000; x₂ = ½(3.75 + 3.733333) = 3.741667; x₃ = ½(3.741667 + 3.741648) = 3.741657; x₄ = 3.741657.
+4. **√14 = 3.741657**. Convergence is quadratic: the number of correct digits roughly doubles each step.
+
+### P73. (CSS 2024, 2026) Newton–Raphson for (a) 4x + cos x + 2 = 0 to four decimals; (b) the first four iterations for f(x) = x − 0.8 − 0.2 sin x on [0, π/2].
+
+**Solution (a).** f′ = 4 − sin x. f(−1) = −1.46, f(0) = 3 ⇒ root in (−1, 0). x₀ = −0.5:
+f(−0.5) = −2 + cos 0.5 + 2 = 0.877583; f′(−0.5) = 4 + 0.479426 = 4.479426 ⇒ x₁ = −0.5 − 0.195914 = −0.695914.
+x₂ = −0.692426; x₃ = −0.692425; x₄ = −0.692425. **x = −0.6924**. (Only one real root, since f′ > 0 everywhere.)
+**Solution (b).** f′ = 1 − 0.2 cos x. x₀ = π/4 = 0.785398:
+x₁ = 0.967121, x₂ = 0.964335, x₃ = 0.964334, x₄ = 0.964334. **x = 0.9643**.
+
+### P74. (CSS 2023) Find the real root of 2x − 3 sin x − 5 = 0 to 4 decimal places by the secant method.
+
+**Solution.**
+1. f(2) = 4 − 2.727892 − 5 = −3.727892; f(3) = 6 − 0.423360 − 5 = 0.576640 ⇒ root in (2, 3).
+2. xₙ₊₁ = xₙ − f(xₙ)(xₙ − xₙ₋₁)/[f(xₙ) − f(xₙ₋₁)].
+
+| n | xₙ | f(xₙ) |
+|---|---|---|
+| 0 | 2.000000 | −3.727892 |
+| 1 | 3.000000 | 0.576640 |
+| 2 | 2.866039 | −0.084161 |
+| 3 | 2.883101 | −0.000666 |
+| 4 | 2.883237 | 0.000001 |
+| 5 | 2.883237 | |
+
+3. **x = 2.8832**.
+
+### P75. (CSS 2020) Solve ln x − cos x = 0 by regula falsi.
+
+**Solution.**
+1. f(1) = −0.540302, f(2) = 0.693147 + 0.416147 = 1.109294.
+2. c = [a f(b) − b f(a)]/[f(b) − f(a)].
+3. c₁ = [1(1.109294) − 2(−0.540302)]/1.649596 = 1.327536; f(c₁) = 0.042456 > 0 ⇒ new bracket [1, 1.327536].
+4. c₂ = 1.303674; f(c₂) > 0 ⇒ [1, 1.303674]. c₃ = 1.302985; c₄ = 1.302965; c₅ = 1.302964.
+5. **x = 1.3030** (4 d.p.). (If the paper means log₁₀ x, the method is identical; the root is then 1.4184 — state your reading.)
+
+### P76. (CSS 2022) Use fixed-point iteration with p₀ = 1 to find a root of x⁴ − 3x² − 3 = 0 on [1, 2] to within 10⁻².
+
+**Solution.**
+1. Choose g(x) = (3x² + 3)^{1/4}. g′(x) = 1.5x(3x² + 3)^{−3/4}; on [1, 2] |g′| ≤ 0.41 < 1 ⇒ convergence.
+2. Iterates: p₁ = 1.565085, p₂ = 1.793573, p₃ = 1.885944, p₄ = 1.922848, p₅ = 1.937508, p₆ = 1.943317.
+3. |p₆ − p₅| = 0.0058 < 10⁻² ⇒ **p ≈ 1.943** (exact root √((3 + √21)/2) = 1.947122).
+
+### P77. (CSS 2024) Perform three Gauss–Seidel iterations for 20x + y − 2z = 17, 3x + 20y − z = −18, 2x − 3y + 20z = 25.
+
+**Solution.**
+1. Diagonally dominant (20 > 1 + 2, 20 > 3 + 1, 20 > 2 + 3) ⇒ Gauss–Seidel converges.
+2. x = (17 − y + 2z)/20; y = (−18 − 3x + z)/20; z = (25 − 2x + 3y)/20. Start (0, 0, 0).
+3. Iteration 1: x = 0.85; y = (−18 − 2.55 + 0)/20 = −1.0275; z = (25 − 1.7 − 3.0825)/20 = 1.010875.
+4. Iteration 2: x = (17 + 1.0275 + 2.02175)/20 = 1.002463; y = (−18 − 3.007388 + 1.010875)/20 = −0.999826; z = (25 − 2.004925 − 2.999478)/20 = 0.999780.
+5. Iteration 3: x = 0.999969; y = −1.000006; z = 1.000002.
+6. **Solution x = 1, y = −1, z = 1.**
+
+### P78. (CSS 2025) Solve 3x₁ + 4x₂ − x₃ = 8, 5x₁ + 3x₂ + 2x₃ = 17, −x₁ + x₂ − 3x₃ = −8 by Gauss–Seidel with three-digit rounding.
+
+**Solution.**
+1. As given, row 1 is not diagonally dominant for x₁ (3 < 4 + 1). In that order the iteration wanders (x₁ = 2.67, 1.77, 1.81, 2.15, 2.73, … — it does not settle).
+2. Reorder: use equation 2 for x₁, equation 1 for x₂, equation 3 for x₃:
+ x₁ = (17 − 3x₂ − 2x₃)/5; x₂ = (8 − 3x₁ + x₃)/4; x₃ = (8 − x₁ + x₂)/3.
+ Rows: |5| ≥ 3 + 2, |4| ≥ 3 + 1, |−3| > 1 + 1 (weakly dominant, and irreducible ⇒ convergent, but slowly).
+3. Three-digit rounding, start (0, 0, 0):
+
+| k | x₁ | x₂ | x₃ |
+|---|---|---|---|
+| 1 | 3.40 | −0.550 | 1.35 |
+| 2 | 3.19 | −0.055 | 1.58 |
+| 3 | 2.80 | 0.295 | 1.83 |
+
+4. Convergence is slow (spectral radius close to 1). Continued, the iterates reach (1.07, 1.93, 2.95) by step 20 and (1.00, 2.00, 3.00) by step 60.
+5. **Exact solution x₁ = 1, x₂ = 2, x₃ = 3** (check: 3 + 8 − 3 = 8; 5 + 6 + 6 = 17; −1 + 2 − 9 = −8 ✓).
+Exam advice: show three iterations as asked, comment on the slow convergence and its cause (only weak diagonal dominance), and confirm the answer by substitution.
+
+### P79. (CSS 2021, 2026) (a) Solve 10x + 3y + z = 19, 3x + 10y + 2z = 29, x + 2y + 10z = 35 by Jacobi. (b) Choose and apply a suitable method to 3x₁ − x₂ + x₃ = −1, −x₁ + 3x₂ − x₃ = 7, x₁ + x₂ − 3x₃ = −7.
+
+**Solution (a).** x = (19 − 3y − z)/10, y = (29 − 3x − 2z)/10, z = (35 − x − 2y)/10. All new values from the previous iterate only.
+
+| k | x | y | z |
+|---|---|---|---|
+| 1 | 1.900000 | 2.900000 | 3.500000 |
+| 2 | 0.680000 | 1.630000 | 2.730000 |
+| 3 | 1.138000 | 2.150000 | 3.106000 |
+| 4 | 0.944400 | 1.937400 | 2.956200 |
+| 5 | 1.023160 | 2.025440 | 3.018080 |
+| 6 | 0.990560 | 1.989440 | 2.992600 |
+| 7 | 1.003908 | 2.004312 | 3.003056 |
+| 8 | 0.998401 | 1.998216 | 2.998747 |
+
+**Solution (1, 2, 3).**
+**Solution (b).** The system is diagonally dominant (3 > 1 + 1 in every row), so Gauss–Seidel is appropriate.
+x₁ = (−1 + x₂ − x₃)/3; x₂ = (7 + x₁ + x₃)/3; x₃ = (7 + x₁ + x₂)/3.
+Iterates: (−0.33333, 2.22222, 2.96296), (−0.58025, 3.12757, 3.18244), (−0.35162, 3.27694, 3.30844), … → **(−1/3, 10/3, 10/3) ≈ (−0.3333, 3.3333, 3.3333)**. (The printed paper shows "x − 3" in the first equation; reading it as x₃ is the only sensible interpretation. Check: −1 − 10/3 + 10/3 = −1 ✓; 1/3 + 10 − 10/3 = 7 ✓; −1/3 + 10/3 − 10 = −7 ✓.)
+
+### P80. (CSS 2019) From x: 0, 0.2, 0.4, 0.6 and f: 15, 21, 30, 51, find second-degree Newton polynomials and estimate f(0.1) and f(0.5).
+
+**Solution.**
+1. Difference table:
+
+| x | f | Δ | Δ² | Δ³ |
+|---|---|---|---|---|
+| 0.0 | 15 | 6 | 3 | 9 |
+| 0.2 | 21 | 9 | 12 | |
+| 0.4 | 30 | 21 | | |
+| 0.6 | 51 | | | |
+
+2. **Forward** (for x near 0), p = (x − 0)/0.2: P₂(x) = 15 + 6p + 3p(p − 1)/2.
+ f(0.1): p = 0.5 ⇒ 15 + 3 − 0.375 = **17.625**.
+3. **Backward** (for x near 0.6), p = (x − 0.6)/0.2, ∇ = 21, ∇² = 12: P₂(x) = 51 + 21p + 12p(p + 1)/2.
+ f(0.5): p = −0.5 ⇒ 51 − 10.5 − 1.5 = **39.0**.
+4. Using the cubic (adding the Δ³ = 9 term) gives 18.1875 and 38.4375; the difference shows the data are not quadratic, so quote the quadratic estimates as asked and note this.
+
+### P81. (CSS 2017) Estimate f(15) from (0, 3.850), (20, 0.800), (40, 0.212) by first- and second-order Lagrange interpolation.
+
+**Solution.**
+1. First order (x₀ = 0, x₁ = 20): f(15) ≈ 3.850(15 − 20)/(0 − 20) + 0.800(15 − 0)/(20 − 0) = 3.850(0.25) + 0.800(0.75) = **1.5625**.
+2. Second order: L₀ = (15 − 20)(15 − 40)/[(0 − 20)(0 − 40)] = 125/800 = 0.15625; L₁ = (15 − 0)(15 − 40)/[(20)(−20)] = 375/400 = 0.9375; L₂ = (15)(−5)/[(40)(20)] = −0.09375.
+ f(15) ≈ 3.850(0.15625) + 0.800(0.9375) + 0.212(−0.09375) = 0.601563 + 0.75 − 0.019875 = **1.3317**.
+
+### P82. (CSS 2020) Estimate f(7.5) from x: 5, 6.1, 6.9, 8, 8.6; f: 3.49, 4.82, 5.96, 7.5, 8.2.
+
+**Solution.** The points are **unequally spaced**, so Newton–Gregory backward differences do not apply directly; use Newton's divided differences (state this — the examiner will credit it).
+1. Divided-difference table:
+
+| x | f | 1st | 2nd | 3rd | 4th |
+|---|---|---|---|---|---|
+| 5.0 | 3.49 | 1.209091 | 0.113636 | −0.042265 | −0.002048 |
+| 6.1 | 4.82 | 1.425000 | −0.013158 | −0.049639 | |
+| 6.9 | 5.96 | 1.400000 | −0.137255 | | |
+| 8.0 | 7.50 | 1.166667 | | | |
+| 8.6 | 8.20 | | | | |
+
+2. P(7.5) = 3.49 + 2.5(1.209091) + (2.5)(1.4)(0.113636) + (2.5)(1.4)(0.6)(−0.042265) + (2.5)(1.4)(0.6)(−0.5)(−0.002048)
+ = 3.49 + 3.022727 + 0.397727 − 0.088756 + 0.002150 = **6.8238**.
+
+### P83. (CSS 2022) For f(x) = xeˣ tabulated at 1.8(0.1)2.2, approximate f′(2.0) by all applicable three- and five-point formulas.
+
+**Solution.** f(1.8) = 10.889365, f(1.9) = 12.703199, f(2.0) = 14.778112, f(2.1) = 17.148957, f(2.2) = 19.855030; h = 0.1.
+1. 3-point endpoint (forward): [−3f(2.0) + 4f(2.1) − f(2.2)]/0.2 = **22.032310**.
+2. 3-point endpoint (backward, h = −0.1): [3f(2.0) − 4f(1.9) + f(1.8)]/0.2 = **22.054525**.
+3. 3-point midpoint: [f(2.1) − f(1.9)]/0.2 = **22.228790**.
+4. 5-point midpoint: [f(1.8) − 8f(1.9) + 8f(2.1) − f(2.2)]/1.2 = **22.166999**.
+5. Exact f′ = (1 + x)eˣ = 3e² = 22.167168. The 5-point formula (error O(h⁴)) is best, error 1.7 × 10⁻⁴.
+
+### P84. (CSS 2019) From x: 1, 1.2, 1.4, 1.6, 1.8, 2.0 and f: 0, 0.128, 0.544, 1.296, 2.432, 4.000, find f′ and f″ at x = 1 and x = 1.1.
+
+**Solution.**
+1. Forward differences at x₀ = 1: Δ = 0.128, 0.416, 0.752, 1.136, 1.568; Δ² = 0.288, 0.336, 0.384, 0.432; Δ³ = 0.048 (constant) ⇒ cubic data.
+2. At x = 1: f′ ≈ (1/h)[Δ − Δ²/2 + Δ³/3] = (1/0.2)[0.128 − 0.144 + 0.016] = **0**. f″ ≈ (1/h²)[Δ² − Δ³] = (0.288 − 0.048)/0.04 = **6**.
+3. At x = 1.1, p = 0.5: f′ ≈ (1/h)[Δ + (2p − 1)Δ²/2 + (3p² − 6p + 2)Δ³/6] = (1/0.2)[0.128 + 0 + (−0.25)(0.048)/6] = **0.63**. f″ ≈ (1/h²)[Δ² + (p − 1)Δ³] = (0.288 − 0.024)/0.04 = **6.6**.
+4. Check: the data fit f = x³ − 3x + 2 exactly, giving f′(1) = 0, f″(1) = 6, f′(1.1) = 0.63, f″(1.1) = 6.6 ✓.
+
+### P85. (CSS 2016, 2018) Approximate ∫₀¹dx/(1 + x²) by the trapezoidal and Simpson's rules with n = 4 and compare with the exact value.
+
+**Solution.**
+1. h = 0.25. f(0) = 1, f(0.25) = 0.941176, f(0.5) = 0.8, f(0.75) = 0.64, f(1) = 0.5.
+2. T = (h/2)[f₀ + 2(f₁ + f₂ + f₃) + f₄] = 0.125[1 + 4.762353 + 0.5] = **0.782794**.
+3. S = (h/3)[f₀ + 4(f₁ + f₃) + 2f₂ + f₄] = (0.25/3)[1 + 6.324706 + 1.6 + 0.5] = **0.785392**.
+4. Exact = tan⁻¹1 = π/4 = 0.785398. Errors: T 0.002604 (0.33%), S 0.000006 (0.0008%).
+5. Byproduct: 4S = 3.141569 ≈ π.
+
+### P86. (CSS 2021) (a) Use Simpson's 3/8 rule for ∫₁³(x³ − 2x² + 7x − 5)dx and find the error. (b) Approximate ∫₀^{π/2}sin²x dx by trapezoidal and Simpson rules (n = 4), give error bounds and compare with the exact value.
+
+**Solution (a).**
+1. n = 3, h = 2/3. Points 1, 5/3, 7/3, 3: f = 1, 5.740741, 13.148148, 25.
+2. S₃/₈ = (3h/8)[f₀ + 3f₁ + 3f₂ + f₃] = 0.25[1 + 17.222222 + 39.444444 + 25] = **20.666667**.
+3. Exact: [x⁴/4 − 2x³/3 + 7x²/2 − 5x]₁³ = 18.75 − (−1.916667) = 62/3 = 20.666667. **Error 0** — the rule is exact for cubics.
+**Solution (b).**
+1. h = π/8. sin²x at 0, π/8, π/4, 3π/8, π/2 = 0, 0.146447, 0.5, 0.853553, 1.
+2. T = (π/16)[0 + 2(1.5) + 1] = π/4 = 0.785398. S = (π/24)[0 + 4(1) + 2(0.5) + 1] = π/4 = 0.785398. Exact = π/4.
+3. Bounds: f″ = 2cos 2x (max 2) ⇒ |E_T| ≤ (b − a)h²·2/12 = 0.0404. f⁽⁴⁾ = −8cos 2x (max 8) ⇒ |E_S| ≤ (b − a)h⁴·8/180 = 0.00166.
+4. Both rules happen to give the exact value here (the errors cancel by symmetry of sin²x about π/4), which shows that bounds are worst cases, not predictions.
+
+### P87. (CSS 2025, 2017) (a) ∫₁³dx/x² by the trapezoidal rule with five points. (b) ∫₀^{0.8}xe^{2x}dx by the trapezoidal rule with three segments; true value and percentage error.
+
+**Solution (a).** h = 0.5; f(1) = 1, f(1.5) = 0.444444, f(2) = 0.25, f(2.5) = 0.16, f(3) = 0.111111.
+T = 0.25[1 + 2(0.854444) + 0.111111] = **0.705** (≈ 0.71). Exact 2/3 = 0.666667; error 0.0383 (5.75%). The rule overestimates because 1/x² is convex.
+**Solution (b).** h = 0.8/3 = 0.266667. f(0) = 0, f(0.266667) = 0.454561, f(0.533333) = 1.549695, f(0.8) = 3.962426.
+T = 0.133333[0 + 2(2.004256) + 3.962426] = **1.062792**.
+Exact: ∫xe^{2x}dx = e^{2x}(2x − 1)/4 ⇒ [e^{1.6}(0.6) + 1]/4 = **0.992955**. Percentage error = (0.992955 − 1.062792)/0.992955 × 100 = **−7.03%** (overestimate).
+
+### P88. (CSS 2019) (a) Derive the two-point Gaussian formula and apply it to ∫₁^{1.6}2x/(x² − 4)dx. (b) The trapezoidal rule gives 4 and Simpson's rule gives 2 for ∫₀²f(x)dx. Find f(1).
+
+**Solution (a).**
+1. Want ∫_{−1}^{1}f(t)dt = w₁f(t₁) + w₂f(t₂) exact for f = 1, t, t², t³: w₁ + w₂ = 2; w₁t₁ + w₂t₂ = 0; w₁t₁² + w₂t₂² = 2/3; w₁t₁³ + w₂t₂³ = 0.
+2. Symmetry gives w₁ = w₂ = 1, t₂ = −t₁; then 2t₁² = 2/3 ⇒ t = ±1/√3. **∫_{−1}^{1}f ≈ f(−1/√3) + f(1/√3)**.
+3. On [1, 1.6]: x = 1.3 + 0.3t, dx = 0.3dt. Nodes x = 1.3 ∓ 0.173205 = 1.126795, 1.473205.
+4. f(1.126795) = −0.825390, f(1.473205) = −1.610353 (computed as 2x/(x² − 4)).
+5. I ≈ 0.3(−0.825390 − 1.610353) = **−0.730723**. Exact = ln|x² − 4| from 1 to 1.6 = ln(1.44/3) = −0.733969. Error 0.0032.
+**Solution (b).**
+1. Trapezoidal with one interval (h = 2): (2/2)[f(0) + f(2)] = 4 ⇒ f(0) + f(2) = 4.
+2. Simpson with h = 1: (1/3)[f(0) + 4f(1) + f(2)] = 2 ⇒ 4 + 4f(1) = 6.
+3. **f(1) = 1/2**.
+
+### P89. (CSS 2025, 2026) (a) Euler's method, h = 0.25, for y′ = 1 + y/x, 1 ≤ x ≤ 2, y(1) = 2. (b) Modified Euler, h = 0.5, for y′ = y − x² + 1, 0 ≤ x ≤ 2, y(0) = 0.5; compare with the exact solution.
+
+**Solution (a).** yₙ₊₁ = yₙ + h(1 + yₙ/xₙ).
+
+| n | xₙ | yₙ | f = 1 + y/x | Exact x ln x + 2x |
+|---|---|---|---|---|
+| 0 | 1.00 | 2.000000 | 3.000000 | 2.000000 |
+| 1 | 1.25 | 2.750000 | 3.200000 | 2.778929 |
+| 2 | 1.50 | 3.550000 | 3.366667 | 3.608198 |
+| 3 | 1.75 | 4.391667 | 3.509524 | 4.479328 |
+| 4 | 2.00 | **5.269048** | | 5.386294 |
+
+Error at x = 2: 0.117 (2.2%). (Exact solution: (y/x)′ = 1/x ⇒ y = x ln x + 2x.)
+**Solution (b).** Predictor y* = yₙ + hf(xₙ, yₙ); corrector yₙ₊₁ = yₙ + (h/2)[f(xₙ, yₙ) + f(xₙ₊₁, y*)].
+
+| n | xₙ | yₙ | f(xₙ, yₙ) | y* | f(xₙ₊₁, y*) | yₙ₊₁ | Exact |
+|---|---|---|---|---|---|---|---|
+| 0 | 0.0 | 0.500000 | 1.500000 | 1.250000 | 2.000000 | 1.375000 | 1.425639 |
+| 1 | 0.5 | 1.375000 | 2.125000 | 2.437500 | 2.437500 | 2.515625 | 2.640859 |
+| 2 | 1.0 | 2.515625 | 2.515625 | 3.773438 | 2.523438 | 3.775391 | 4.009155 |
+| 3 | 1.5 | 3.775391 | 2.525391 | 5.038086 | 2.038086 | **4.916260** | 5.305472 |
+
+Exact solution y = (x + 1)² − 0.5eˣ (linear ODE). Error at x = 2: 0.389 (7.3%) — large because h = 0.5 is coarse.
+
+### P90. (CSS 2024) Modified Euler for dy/dt = t + √y, y(0) = 1, 0 ≤ t ≤ 0.6, h = 0.2.
+
+**Solution.**
+1. Step 1: f(0, 1) = 1; y* = 1.2; f(0.2, 1.2) = 0.2 + 1.095445 = 1.295445; y₁ = 1 + 0.1(1 + 1.295445) = **1.229545**.
+2. Step 2: f(0.2, 1.229545) = 1.308848; y* = 1.491314; f(0.4, 1.491314) = 1.621194; y₂ = 1.229545 + 0.1(2.930042) = **1.522549**.
+3. Step 3: f(0.4, 1.522549) = 1.633916; y* = 1.849332; f(0.6, 1.849332) = 1.959901; y₃ = 1.522549 + 0.1(3.593817) = **1.881930**.
+**y(0.2) = 1.2295, y(0.4) = 1.5225, y(0.6) = 1.8819.**
+
+### P91. Use RK4 with h = 0.2 for y′ = x + y, y(0) = 1, to find y(0.2) and y(0.4). Compare with the exact solution.
+
+**Solution.**
+1. Step 1 (x₀ = 0, y₀ = 1): k₁ = 0.2(0 + 1) = 0.2; k₂ = 0.2(0.1 + 1.1) = 0.24; k₃ = 0.2(0.1 + 1.12) = 0.244; k₄ = 0.2(0.2 + 1.244) = 0.2888.
+ y₁ = 1 + (0.2 + 0.48 + 0.488 + 0.2888)/6 = **1.242800**.
+2. Step 2 (x₁ = 0.2, y₁ = 1.2428): k₁ = 0.28856; k₂ = 0.337416; k₃ = 0.342302; k₄ = 0.397020.
+ y₂ = 1.2428 + (0.28856 + 0.674832 + 0.684603 + 0.397020)/6 = **1.583636**.
+3. Exact y = 2eˣ − x − 1: 1.242806, 1.583649. Errors 6 × 10⁻⁶ and 1.3 × 10⁻⁵ — RK4 is far more accurate than Euler.
+
+### P92. (CSS 2023) Solve dy/dx = (3x + y)/(x + 2y), y(1) = 1, at x = 1.2 by a second-order Runge–Kutta method, h = 0.1.
+
+**Solution (Heun form: k₁ = hf(xₙ, yₙ), k₂ = hf(xₙ + h, yₙ + k₁), yₙ₊₁ = yₙ + (k₁ + k₂)/2).**
+1. Step 1: f(1, 1) = 4/3 ⇒ k₁ = 0.133333. f(1.1, 1.133333) = (3.3 + 1.133333)/(1.1 + 2.266667) = 1.316832 ⇒ k₂ = 0.131683.
+ y(1.1) = 1 + (0.133333 + 0.131683)/2 = **1.132508**.
+2. Step 2: k₁ = 0.1 f(1.1, 1.132508) = 0.131723; k₂ = 0.1 f(1.2, 1.264231) = 0.130462.
+ y(1.2) = 1.132508 + (0.131723 + 0.130462)/2 = **1.263601**.
+(If the midpoint form k₂ = hf(xₙ + h/2, yₙ + k₁/2) is used, the answer differs only in the fourth decimal. State which form you use.)
+
+### P93. (CSS 2024) Solve Van der Pol's equation y″ − 0.1(1 − y²)y′ + y = 0, y(0) = 1, y′(0) = 0, by RK4 at x = 0.2.
+
+**Solution.**
+1. System: y′ = z, z′ = 0.1(1 − y²)z − y. y₀ = 1, z₀ = 0, h = 0.2.
+2. k₁ (slopes at (0, 1, 0)): y′ = 0, z′ = 0.1(0)(0) − 1 = −1.
+3. k₂ at y = 1 + 0.1(0) = 1, z = 0 + 0.1(−1) = −0.1: y′ = −0.1, z′ = 0.1(0)(−0.1) − 1 = −1.
+4. k₃ at y = 1 + 0.1(−0.1) = 0.99, z = 0 + 0.1(−1) = −0.1: y′ = −0.1, z′ = 0.1(1 − 0.9801)(−0.1) − 0.99 = −0.990199.
+5. k₄ at y = 1 + 0.2(−0.1) = 0.98, z = 0.2(−0.990199) = −0.198040: y′ = −0.198040, z′ = 0.1(1 − 0.9604)(−0.198040) − 0.98 = −0.980784.
+6. y(0.2) = 1 + (0.2/6)[0 + 2(−0.1) + 2(−0.1) − 0.198040] = **0.980065**.
+ y′(0.2) = 0 + (0.2/6)[−1 + 2(−1) + 2(−0.990199) − 0.980784] = **−0.198706**.
+(A fine-step solution gives 0.980065 and −0.198709.)
+
+### P94. (CSS 2026) Evaluate ∫1/(1 + x⁴)dx with h = ¼ by the trapezoidal and Simpson's 1/3 rules.
+
+**Solution.** The extracted paper text shows the limits as 0 to 3 (n = 12); some copies read 0 to 1. Both are given.
+**Limits 0 to 1 (n = 4).** f = 1, 0.996109, 0.941176, 0.759644, 0.5.
+T = 0.125[1 + 2(2.696929) + 0.5] = **0.861732**; S = (1/12)[1 + 4(1.755753) + 2(0.941176) + 0.5] = **0.867114**. Accurate value 0.866973.
+**Limits 0 to 3 (n = 12).** T = **1.098356**; S = **1.098474**. Accurate value 1.098440.
