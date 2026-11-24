@@ -1,6 +1,6 @@
 # Model Answers — Public Administration
 
-Eight full answers, written the way a candidate should write them in the exam: outline, introduction with thesis, headed body, critical analysis, way forward, conclusion. Each is about 1,100–1,300 words. In the exam you have about 33–35 minutes per answer; aim for 900–1,100 words. Read a model answer **after** you have written your own attempt.
+Eight full answers, written the way a candidate should write them in the exam: outline, introduction with thesis, headed body, critical analysis, way forward, conclusion. Each is about 1,000–1,100 words including the outline. In the exam you have about 33–35 minutes per answer; aim for 900–1,100 words. Read a model answer **after** you have written your own attempt.
 
 Facts marked **[verify]** in the notes are left out here or stated cautiously. Refresh figures (budget, CPI, HDI) before the exam.
 
@@ -65,10 +65,13 @@ The statement exaggerates. "Democracy is ill-informed" is an elitist claim; citi
 7. *Performance management* that rewards results, not loyalty.
 8. *Ethics* — enforcement of the Civil Servants Conduct Rules 2026, which bar political activity and require asset declarations.
 
+**International comparison**
+Other democracies have managed the tension in different ways. The UK keeps a permanent, politically neutral civil service under ministers who answer to Parliament; officials advise privately and implement loyally, and a Civil Service Commission protects merit. The United States places about 4,000 political appointees on top of a merit service, gaining responsiveness at the cost of some continuity. India's IAS, which shares Pakistan's colonial roots, has kept a stronger constitutional footing (Article 311 protections) and, after the Supreme Court's *Prakash Singh* judgment (2006) on police, a push for fixed tenures. The lesson for Pakistan is that neutrality and democratic control can coexist when the rules on appointments, tenure and removal are clear and respected by all parties.
+
 **Conclusion**
 Bureaucracy and democracy pull in different directions, but each needs the other. Weber's warning and Wilson's hope are both right. Pakistan's difficulty is a mismatch between high citizen expectations and a weak civic culture, made worse by a politicised service and interrupted democracy. The answer is not to choose one over the other but to build a professional, neutral bureaucracy under democratic, rules-based control, with citizens able to hold both to account.
 
-*(about 1,050 words)*
+*(about 1,090 words including outline)*
 
 ---
 
@@ -143,10 +146,13 @@ The record supports Riggs' thesis. Where administrative development came first �
 6. *Partnerships* with private sector and civil society (development management), with strong contract oversight.
 7. *Accountability that is fair* — protect good-faith decisions while punishing corruption.
 
+**Lessons from East Asia**
+South Korea and Malaysia show how administrative development can precede and drive development administration. South Korea created an Economic Planning Board in 1961, recruited elite officials through highly competitive examinations, protected them from day-to-day politics and held them to export and growth targets — Peter Evans' "embedded autonomy". Malaysia's Performance Management and Delivery Unit (PEMANDU, 2009) tracked a few national priorities with public targets. Pakistan already has some of the building blocks: a competitive CSS examination, a Planning Commission with a long history, and delivery-unit experience from Punjab's education roadmap (2011–18). What it lacks is continuity of policy, protection of officials who perform, and specialisation — which is why the 2026 proposals for specialised cadres and performance contracts matter for development, not only for the civil service.
+
 **Conclusion**
 Development administration and administrative development are two sides of one coin. Pakistan's bureaucracy has proved it can deliver when it is capable and insulated, as NADRA and BISP show. Its failures come from a colonial, politicised and generalist structure that was never fully reformed. For Pakistan to develop, it must first develop its administration — and then let that administration serve citizens rather than rule them.
 
-*(about 1,100 words)*
+*(about 1,030 words including outline)*
 
 ---
 
@@ -219,10 +225,13 @@ The PFM Act 2019 introduced the Budget Strategy Paper, cash management through a
 7. Publish a tax-expenditure statement and SOE fiscal risk statement.
 8. Link the next NFC award to service outcomes and provincial revenue effort.
 
+**The provincial dimension**
+The federal budget cannot be judged alone. After the 7th NFC Award, provinces receive most of the divisible pool, and under recent IMF programmes they are asked to run cash surpluses that help meet the national fiscal target. Provincial budgets follow the same constitutional pattern (Articles 120–124) and face similar problems: optimistic revenue estimates, large development programmes cut mid-year, and little own-source revenue from agriculture and property. Provincial Finance Commission awards to local governments are irregular. A national fiscal framework agreed in the CCI or NEC, with clear sharing of responsibilities for debt, development and social spending, would make both levels of budgeting more credible.
+
 **Conclusion**
 Pakistan's budget process is constitutionally clear and has modern tools on paper. In practice it struggles to raise revenue, is crowded out by interest and fixed costs, and amplifies rather than smooths the business cycle. I am satisfied with the legal framework, not with the outcomes. Real improvement depends on broadening the tax base, stronger parliamentary scrutiny and fiscal rules that bind governments in good times as well as bad.
 
-*(about 1,150 words)*
+*(about 1,100 words including outline)*
 
 ---
 
@@ -299,10 +308,13 @@ Pakistan has adopted NPM "à la carte" — the parts that suit donors and politi
 5. Use digital tools to standardise and reduce discretion.
 6. Evaluate each reform independently and scale what works.
 
+**An illustrative case: Punjab's public sector companies**
+Between roughly 2010 and 2018 the Punjab government set up dozens of public sector companies for waste management, transport, energy and other services. The idea was classic NPM: free managers from rigid departmental rules, pay market salaries and focus on results. Some delivered visible services, such as solid-waste management in Lahore through contracts with foreign firms. But audit reports and court proceedings later questioned high salaries, weak boards, procurement practices and overlapping mandates with elected local bodies and departments. The experience shows NPM's promise and its preconditions: autonomy works only when boards are independent, contracts are well written, performance is measured and accountability is enforced.
+
 **Conclusion**
 The bureaucratic model and NPM answer different problems: the first prevents arbitrariness, the second fights inefficiency. Developing countries need both, in sequence. For Pakistan, NPM is relevant as a toolkit, not as a paradigm. Without a merit-based, rule-following bureaucracy, NPM's freedom for managers becomes freedom for patronage.
 
-*(about 1,150 words)*
+*(about 1,020 words including outline)*
 
 ---
 
@@ -364,10 +376,19 @@ Not every failure is the bureaucracy's fault. Policies are often designed withou
 9. *Citizen feedback*: Citizen's Portal data used to rank offices.
 10. *Protect good-faith decisions* from punitive accountability so officials take action.
 
+**Applying theory to a Pakistani case**
+Matland's ambiguity–conflict model helps diagnose failures. The polio programme is a low-ambiguity but high-conflict policy: the goal (vaccinate every child) is clear, but resistance in some communities and attacks on vaccinators make it political; it improved when emergency operations centres combined top-down data with community engagement through local religious leaders. Tax reform is also high-conflict: the goal is clear, but traders' associations resist, so administrative solutions alone fail without political bargaining. Education reform under Article 25A is high in both ambiguity and conflict — what counts as quality, who pays, which language — so pilots and adaptation are needed.
+
+**A success story: Punjab's education roadmap (2011–18)**
+Working with Michael Barber, the Punjab government set a small number of targets (teacher presence, student attendance, facilities), collected monthly data through district monitoring officers, and held regular stocktakes chaired by the Chief Minister. Teacher and student attendance improved measurably. The lessons — few priorities, reliable data, regular high-level review, and consequences — apply to any sector.
+
+**Role of street-level bureaucrats**
+Lipsky's insight matters in Pakistan: a policy on school attendance or FIR registration is finally made by the teacher or the station clerk. Training, manageable workloads and clear service standards for these officials are therefore part of implementation design, not an afterthought.
+
 **Conclusion**
 Policies fail in Pakistan at the stage where theory says they are most fragile: in the long chain from cabinet room to classroom. The solution is not more policies but fewer, clearer priorities, delivered by stable, capable teams with money, data and authority, and held accountable for results. Implementation is administration — and administration is where Pakistan must invest.
 
-*(about 1,050 words)*
+*(about 1,020 words including outline)*
 
 ---
 
@@ -451,10 +472,16 @@ The framework is wide but enforcement has been selective, slow and politicised. 
 **6. Role of citizens and civil society**
 Citizens can refuse to pay bribes and use online services; file RTI requests; report through the Citizen's Portal; join social audits of schools and health units; support honest officials publicly. Civil society organisations and media can investigate and publish, and professional bodies can enforce codes of ethics.
 
+**International lessons**
+Countries that reduced corruption sharply did so through institutions, not campaigns. Hong Kong's Independent Commission Against Corruption (1974) combined investigation, prevention (redesigning procedures in vulnerable departments) and community education, and reported to the head of government rather than to the police it investigated. Singapore's Corrupt Practices Investigation Bureau (1952) worked alongside competitive public pay and strict enforcement at the top. Georgia, after 2004, dismissed its notoriously corrupt traffic police and recruited a new, better-paid patrol police, while moving many services online; petty bribery fell dramatically. The common elements — political will at the top, independent and non-partisan enforcement, simplified and digitised services, and adequate pay — match Klitgaard's formula and are missing or incomplete in Pakistan.
+
+**Corruption in the police and land administration — two examples**
+Citizens' surveys by Transparency International Pakistan have repeatedly placed police and land administration among the most corrupt sectors. Both show Klitgaard's formula at work: the station house officer has a monopoly over registering an FIR and wide discretion in investigation; the patwari long had a monopoly over land records. Punjab's computerisation of land records through the Punjab Land Records Authority reduced the patwari's monopoly and discretion, and complaints about bribery for land documents fell, though problems remain. A similar logic — digital FIR registration, online tracking of cases and independent complaint bodies — could reduce police corruption.
+
 **Conclusion**
 Corruption in Pakistan is a system problem, not just a moral one. It thrives where officials have monopoly and discretion and face little accountability. The cure lies in removing monopoly through competition and digitisation, structuring discretion through clear rules, and building accountability that is fair and non-partisan. Exemplary punishment matters, but systems matter more.
 
-*(about 1,050 words)*
+*(about 1,030 words including outline)*
 
 ---
 
@@ -532,10 +559,13 @@ As of late November 2026, I could not confirm cabinet approval.
 - Consultation with provinces through the CCI.
 - Protection of tenure for officers in key posts, so performance can be judged.
 
+**Sequencing the reforms**
+A realistic sequence would be: (1) in the first year, pass legal amendments, set up the independent selection body for the National Executive Service, and pilot specialised cadres in two or three ministries such as IT and energy; (2) in the second year, launch the new performance system with twice-yearly reviews and publish ministry targets; (3) from the third year, scale up cadres and contract-based senior posts, linked to a pay review for specialists. Each step should be evaluated publicly. Reforms that try to change everything at once tend to change nothing.
+
 **Conclusion**
 The 2024–26 agenda is the most comprehensive since 1973 and, unlike Bhutto's reforms, aims at specialisation and performance rather than control. Pension reform, rightsizing and new conduct rules are already in force. Whether the larger package creates a more efficient and responsive service depends on whether selection is depoliticised, pay matches the new expectations and the reforms survive the next government. The design is promising; the history of implementation is the warning.
 
-*(about 1,250 words)*
+*(about 1,110 words including outline)*
 
 ---
 
@@ -599,7 +629,13 @@ Deconcentration alone keeps the colonial model; delegation alone fragments autho
 6. Clear division of functions among province, district and city.
 7. Citizen oversight: participatory budgeting, social audit, digital complaints.
 
+**Lessons from abroad**
+India's 73rd and 74th Constitutional Amendments (1992) gave panchayats and municipalities constitutional status, mandatory elections every five years, reserved seats for women and disadvantaged groups, and State Finance Commissions to share revenue. Implementation is uneven, but local elections are now regular across India. Indonesia's "big bang" decentralisation (2001) moved large functions and budgets to districts almost overnight; services improved in some districts and suffered in others, showing the need for capacity and oversight. Pakistan can borrow the constitutional guarantees from India and the lesson about capacity from Indonesia.
+
+**Sequencing devolution**
+Devolution should be phased: first municipal services and primary health and education, with clear budgets; then wider functions as capacity is proven through audits and citizen scorecards.
+
 **Conclusion**
 Pakistan's socio-political context — federal, diverse, rapidly urbanising — calls for devolution. Deconcentration and delegation have roles, but on their own they keep power far from citizens. The record since 2001 shows that devolution fails when it is imposed, unprotected and unfunded. A constitutionally protected, financially secure and capable local government system would make Article 140A a reality rather than a promise.
 
-*(about 1,150 words)*
+*(about 1,010 words including outline)*

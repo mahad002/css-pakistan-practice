@@ -7,7 +7,7 @@ Status on 24 Nov 2026. **Full** = notes deep enough for a 20-mark answer. **Shor
 - 105 syllabus items: **93 Full, 12 Short, 0 Not yet.**
 - Past papers: all eleven papers 2016–2026 read in full (77 questions). 2023–2026 from FPSC; 2016, 2018–2020 from NOA scans of FPSC papers; 2017, 2021, 2022 from a compilation of FPSC papers.
 - Syllabus wording taken from a faithful NOA copy of the FPSC syllabus; the FPSC PDF itself would not open in my page reader (certificate error). Check the wording once on the FPSC PDF.
-- 8 model answers (about 1,050–1,250 words each); 156 MCQs; 119 subjective questions (88 past entries, 31 predicted).
+- 8 model answers (about 1,000–1,100 words each, including outline); 156 MCQs; 119 subjective questions (88 past entries, 31 predicted).
 
 ## Item-by-item
 

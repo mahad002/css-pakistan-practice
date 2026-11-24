@@ -1,6 +1,6 @@
 # Model Answers — Criminology
 
-Nine full answers covering all four sections (you must answer one question from each section). Each is about 1,000–1,250 words, written as a candidate should write in 33–35 minutes: outline, introduction with thesis, headed body, theory, Pakistani evidence, critique, way forward, conclusion. Write your own attempt first, then compare.
+Nine full answers covering all four sections (you must answer one question from each section). Each is about 1,000–1,100 words including the outline, written as a candidate should write in 33–35 minutes: outline, introduction with thesis, headed body, theory, Pakistani evidence, critique, way forward, conclusion. Write your own attempt first, then compare.
 
 | # | Section | Question |
 |---|---|---|
@@ -71,10 +71,19 @@ Criminology in Pakistan is still young. Crime data are unreliable because many c
 5. Training of judges, prosecutors and investigators in criminology and forensics.
 6. Indigenous research on honour crime, jirgas, sectarian violence and drug use.
 
+**Where criminological knowledge has already shaped policy in Pakistan**
+Several recent reforms reflect criminological thinking, even if not always acknowledged. The Juvenile Justice System Act 2018 builds on labelling theory and the evidence that diversion reduces re-offending: minor cases go to Juvenile Justice Committees instead of courts. The Anti-Rape (Investigation and Trial) Act 2021 reflects victimology — special investigation units, in-camera trials and the ban on the two-finger test protect victims from secondary victimisation. Safe City projects in Lahore and Islamabad apply situational crime prevention and routine activity theory by increasing guardianship through cameras. The Punjab Probation and Parole Service Act 2019 applies penological research showing that supervised community sentences are cheaper and often more effective than short prison terms. De-radicalisation centres such as Sabaoon draw on social learning and psychological research.
+
+**Criminology and the Islamic tradition**
+Criminology also helps Pakistan connect its constitutional commitment to Islamic principles with modern justice. The Islamic emphasis on preventing crime through social justice (zakat, care for orphans), strict standards of proof, and forgiveness and compensation through diyat parallels modern ideas of social crime prevention, due process and restorative justice. Studying these links can produce policies that are both effective and culturally legitimate.
+
+**A note of caution**
+Criminology does not provide ready-made answers. Theories developed in Chicago or London may not fit a society where tribe, caste, religion and feudal power shape behaviour. Pakistani criminology must therefore test imported ideas locally before turning them into policy.
+
 **Conclusion**
 Criminology studies crime from its causes to society's response. Its wide scope — from theory to forensic science and corrections — matches the breadth of Pakistan's crime problems. Used well, it can help Pakistan move from reactive, force-based crime control to prevention, fair investigation and rehabilitation.
 
-*(about 1,000 words)*
+*(about 1,000 words including outline)*
 
 ---
 
@@ -142,10 +151,18 @@ So strain theory works best when combined with learning and control theories.
 8. **De-radicalisation and inclusion** — political participation and grievance redress in marginalised regions.
 9. **Juvenile justice that avoids labelling** — diversion under JJSA 2018.
 
+**Applying strain to two Pakistani patterns**
+*Cyber fraud by educated youth.* Graduates with digital skills but no jobs are recruited into online scam operations and fake call centres. This is Merton's innovation in a modern form: the goal (income, status) is accepted, the legitimate means (employment) are blocked, and technology offers an illegitimate path with low perceived risk.
+*Female youth.* Young women in Pakistan face strain too — restrictions on education and work, forced marriage — but they rarely respond with crime. Agnew's General Strain Theory helps here: the response to strain depends on coping resources, social support and social control. Women's tighter supervision and different socialisation channel strain into depression or withdrawal rather than offending. This also shows the limits of Merton's original theory, which assumed one response pattern.
+*Policy implication.* Remedies must therefore address both blocked opportunities (jobs, education) and coping (counselling, social support), as Agnew suggests.
+
+**Strain and radicalisation**
+Merton's "rebellion" also helps explain why some marginalised youths join militant or separatist groups: rejecting both the goals and the means of the existing order, they adopt new ones offered by a movement. Strain alone does not make a militant — ideology, recruiters and opportunity matter — but it creates the frustration recruiters exploit.
+
 **Conclusion**
 Merton showed that crime can be a normal response to an abnormal gap between goals and means. In Pakistan, that gap is wide for millions of young people. Strain theory does not explain every crime, but it points to the most important remedy: open legitimate doors — education, jobs, fairness — so that young people do not seek illegitimate ones.
 
-*(about 1,050 words)*
+*(about 1,050 words including outline)*
 
 ---
 
@@ -216,10 +233,16 @@ Delinquency rises when risks accumulate and protections are absent.
 8. **Data:** birth registration and a juvenile justice database.
 9. **Partnerships:** UNICEF and NGOs for child protection systems.
 
+**Explaining the factors through theory**
+The factors are best understood through several theories together. **Strain theory** (Merton, Agnew) explains how poverty and blocked opportunities push adolescents toward theft, snatching and drug dealing. **Social control theory** (Hirschi) explains why weak attachment to parents, low commitment to school and idle time free young people to offend. **Differential association** (Sutherland) explains how delinquent peers and gangs teach techniques and justifications. **Social disorganisation** (Shaw and McKay) explains why delinquency clusters in slums with transient populations and weak community institutions. **Labelling theory** warns that harsh responses — jailing children with adults, naming them in the media — can turn occasional delinquents into persistent offenders. Moffitt's distinction between adolescence-limited and life-course-persistent offenders suggests that most juveniles grow out of delinquency, so the justice system should avoid doing lasting harm, while focusing intensive help on the small group with early, serious problems.
+
+**A counter-view**
+Some argue that poverty alone causes delinquency. The evidence does not support so simple a view: most poor children never offend, and delinquency also occurs among affluent youth — in drug use, cyber offences and dangerous driving. What matters is the combination of risks and the absence of protection, especially family support and schooling. This is why prevention must work through families and schools, not only through poverty reduction.
+
 **Conclusion**
 Juvenile delinquency in Pakistan is not caused by a single factor but by the meeting of social, demographic and environmental pressures on children with too few protections. The evidence from prevention science is clear: strengthening families, schools and communities reduces delinquency more effectively than punishment. Investing in children is the cheapest crime policy Pakistan has.
 
-*(about 1,050 words)*
+*(about 1,010 words including outline)*
 
 ---
 
@@ -282,10 +305,16 @@ Safe City projects with CCTV and command centres; provincial Counter-Terrorism D
 9. **Women in police:** recruitment targets and facilities.
 10. **Criminal justice coordination:** district committees of police, prosecution, courts and prisons.
 
+**Lessons from other countries**
+Other countries with colonial or corrupt police forces have reformed them. **Georgia** dismissed its notoriously corrupt traffic police in 2004 and recruited a new, better-paid patrol police with modern equipment and visible accountability; public trust rose sharply. **India's** Supreme Court, in *Prakash Singh v. Union of India* (2006), directed states to set up security commissions, give police chiefs a minimum fixed tenure, separate investigation from law-and-order duties, create police establishment boards for postings, and establish police complaints authorities — measures similar to Pakistan's Police Order 2002, and similarly resisted by state governments. The **United Kingdom** relies on policing by consent, independent inspection (HM Inspectorate) and elected Police and Crime Commissioners (since 2012) for local accountability. The common lesson is that operational independence must come with strong, transparent oversight — neither political control nor unchecked police power works.
+
+**The debate over force**
+Some argue that tough tactics — encounters, mass arrests, preventive detention — are necessary when criminals are heavily armed and courts are slow. Supporters of Punjab's Crime Control Department point to falling crime figures. Critics, including the HRCP, reply that extrajudicial killings violate Article 9, kill innocent people, destroy evidence that could expose wider networks, and further erode trust. Long-term evidence from other countries shows that legitimacy, not fear, produces lasting cooperation and lower crime. A balanced position is that firm action against violent gangs must remain within the law and be subject to independent inquiry.
+
 **Conclusion**
 Pakistan's police face a dangerous and changing crime environment with colonial structures, political interference and thin resources. More force alone — encounters or emergency laws — cannot solve these problems and may deepen distrust. A professional, accountable, community-oriented police service, backed by modern investigation and fair courts, is the only durable path to law and order.
 
-*(about 1,050 words)*
+*(about 1,010 words including outline)*
 
 ---
 
@@ -345,10 +374,19 @@ Criminal investigation is the lawful collection, preservation, analysis and pres
 7. A DNA database law with privacy safeguards.
 8. Accountability for fabrication and torture.
 
+**The principles in action: a street robbery case**
+Consider a mobile-phone robbery at gunpoint in a Lahore market. *Promptness:* the first officer responds quickly, aids the victim and circulates a description. *Scene preservation:* the spot is cordoned; a dropped cap and a discarded cartridge are protected for forensic examination. *Locard's principle:* the cap may carry DNA; the cartridge links to a weapon. *Information:* Safe City cameras show the getaway motorcycle; the stolen phone's IMEI is flagged; witnesses are interviewed separately using open questions. *Database use:* the motorcycle registration and the suspect's CNIC are checked with NADRA; call records place the suspect at the scene. *Legality:* the suspect is arrested, informed of the grounds and produced before a magistrate within 24 hours; the house search is made in the presence of two respectable witnesses (CrPC s.103). *Ethical interviewing:* the suspect is questioned without coercion; any confession is recorded before a magistrate under s.164. *Documentation and chain of custody:* every item is logged. *Coordination:* the prosecutor reviews the file before the challan. The result is a case resting on CCTV, forensic and digital evidence rather than a disputed confession — far more likely to end in conviction.
+
+**Ethics as a principle, not an add-on**
+Torture and fabricated evidence do not only violate rights; they also produce unreliable information, wrongful convictions and acquittals on appeal when the defects come to light. Ethical investigation is therefore also effective investigation. The 2022 Torture Act and the shift toward rapport-based interviewing (PEACE, the Méndez Principles) reflect this.
+
+**Supervision and review**
+Finally, senior officers should review every serious case at fixed points — after the first 48 hours, before the challan, and when new evidence emerges. Structured review catches tunnel vision early and ensures that the principles are actually applied, not just listed in manuals.
+
 **Conclusion**
 The principles of criminal investigation — legality, objectivity, promptness, scientific method, documentation and ethics — are not technicalities. They are what turns suspicion into proof. Pakistan's low conviction rates show the cost of ignoring them; its forensic successes show what is possible when they are followed.
 
-*(about 1,000 words)*
+*(about 1,000 words including outline)*
 
 ---
 
@@ -406,10 +444,22 @@ The FIA's NCB uses Red Notices to seek fugitives, including in financial and ter
 5. Investment in cyber and crypto capabilities.
 6. More extradition and mutual legal assistance agreements.
 
+**Regional and complementary mechanisms**
+INTERPOL works alongside other bodies. EUROPOL provides deeper analysis and joint investigation teams within the EU; ASEANAPOL (1981) links Southeast Asian police; the Shanghai Cooperation Organisation's Regional Anti-Terrorist Structure (RATS) in Tashkent shares intelligence on terrorism among member states including Pakistan. UNODC supports legal frameworks under the Palermo Convention, and FATF tackles the money behind organised crime. These overlapping mechanisms show that INTERPOL is one part of a wider architecture: it provides global reach and common databases, while regional bodies provide depth and trust.
+
+**What would make INTERPOL more effective?**
+Greater use of its databases at every border crossing, more funding for weak National Central Bureaus, faster review of politically sensitive notices, and closer links between INTERPOL's financial-crime tools and national financial intelligence units would raise its impact on organised crime.
+
+**A balanced verdict**
+Critics who say INTERPOL has "failed" because drug trafficking and human smuggling persist expect too much from an information-sharing body. Defenders who credit it with every arrest overstate its role. The fairest judgement is that INTERPOL has raised the cost and risk of crossing borders for criminals, made fugitives easier to find and helped coordinate operations that no single country could run alone. Its success is real but partial; the decisive factor remains the strength and integrity of national police forces.
+
+**INTERPOL and terrorism**
+The same tools serve counter-terrorism. Databases of foreign terrorist fighters, travel-document checks and Orange Notices on imminent threats have helped member states track militants returning from conflict zones. For Pakistan, which faces cross-border militancy, these channels supplement bilateral intelligence sharing. Yet political disagreements between states — over who counts as a terrorist — limit cooperation, a reminder of Article 3's neutrality rule and its constraints.
+
 **Conclusion**
 INTERPOL has made international policing possible by giving 196 countries a common language, network and set of tools. Its successes are real — arrests, rescues, seizures — but limited. Organised crime is reduced when strong national agencies use INTERPOL's tools, follow the money and cooperate across borders. INTERPOL is a force multiplier, not a substitute for capable domestic policing.
 
-*(about 1,000 words)*
+*(about 980 words including outline)*
 
 ---
 
@@ -473,10 +523,20 @@ Military operations reduced violence sharply after 2014, but militancy returned 
 9. **Regional diplomacy** to deny sanctuaries.
 10. **Youth participation** in politics and civic life.
 
+**Online radicalisation and the role of families**
+The internet has changed the escalation process. Militant groups use social media, encrypted messaging and videos to reach young people directly, bypassing local religious and community gatekeepers. Algorithms can push users toward more extreme content, creating echo chambers where violent views seem normal — a modern setting for Sutherland's differential association. The CSS 2020 paper asked exactly this. Responses include monitoring and removing terrorist content under PECA and through cooperation with platforms, but also positive alternatives: credible counter-messages by scholars and former militants, digital literacy in schools, and helplines for worried parents.
+Families are often the first to notice changes — withdrawal, new peer groups, hostility toward family members' beliefs. Programmes that train mothers and teachers to recognise warning signs and seek help, as some de-radicalisation initiatives have done, can intervene before a young person reaches the top of Moghaddam's staircase. Women and families are therefore not only victims of terrorism but partners in preventing it.
+
+**Avoiding counter-productive responses**
+Heavy-handed measures can backfire. Enforced disappearances, collective punishment and the use of broad laws against peaceful critics create new grievances that recruiters exploit — the very push factors that drive radicalisation. Counter-terrorism is most effective when it is lawful, targeted and seen as fair.
+
+**Measuring progress**
+Success should be measured not only by the number of militants killed or arrested, but by fewer recruits, more convictions in anti-terrorism courts, fewer incidents of mob violence, and greater public confidence in the state's fairness.
+
 **Conclusion**
 Radicalism exists in Pakistan's society and politics, and in some cases it has escalated into terrorism through a recognisable process of grievance, ideology, group belonging and opportunity. Force can stop attacks, but only justice, education, inclusion and credible counter-narratives can stop people from climbing the staircase in the first place.
 
-*(about 1,100 words)*
+*(about 1,030 words including outline)*
 
 ---
 
@@ -547,10 +607,22 @@ Pakistan was grey-listed in June 2018. It completed a 27-point action plan on te
 7. Non-partisan enforcement to build credibility.
 8. Preparation for the next APG mutual evaluation.
 
+**Case illustration: trade-based laundering and crypto-assets**
+CSS 2021 asked about trade-based money laundering and the risk of cryptocurrencies. In TBML, a trader over-invoices imports from a related company abroad, moving money out of Pakistan under cover of trade, or under-invoices exports to leave value abroad; misuse of Afghan transit trade adds another channel. Detection depends on comparing declared prices with international benchmarks, matching trade data with partner countries and sharing customs data with the FMU. Crypto-assets carry high potential risk because transfers are fast, cross-border and pseudonymous, but blockchains are traceable; the risk falls when exchanges are licensed, apply know-your-customer checks and follow FATF's travel rule.
+
+**International comparison**
+The UK's Criminal Finances Act 2017 introduced Unexplained Wealth Orders, requiring people to explain the source of assets disproportionate to their known income. Pakistan's own experience with plea bargains under the NAB law and benami legislation shows that asset-focused tools can work if they are applied fairly and not used selectively against political opponents.
+
+**Enforcement and credibility**
+Laws on paper do not deter if convictions are rare. Specialised financial-crime investigators, prosecutors trained in forensic accounting, and courts that decide cases within set time limits are needed. Equally important is credibility: if anti-money-laundering tools are seen as weapons against political opponents, public and international confidence declines. Even-handed enforcement against the powerful is the real test of the system.
+
+**Role of the private sector**
+Banks, exchange companies, real-estate agents, jewellers, lawyers and accountants are the gatekeepers of the financial system. Their customer due diligence, record-keeping and suspicious transaction reporting are the first line of defence; training them and sanctioning non-compliance turns them from potential enablers into partners.
+
 **Conclusion**
 Pakistan's anti-money-laundering framework has moved from weak to reasonably robust on paper, as the 2022 exit from the FATF grey list showed. Durable success, however, depends on shrinking the informal economy, enforcing the law even-handedly and keeping pace with new methods such as trade-based laundering and crypto-assets.
 
-*(about 1,050 words)*
+*(about 1,000 words including outline)*
 
 ---
 
@@ -619,7 +691,19 @@ Community policing is a philosophy that promotes partnerships between the police
 9. **Pilot and scale:** start in selected districts, evaluate, expand.
 10. **Partnerships** with NGOs, universities, schools and religious leaders.
 
+**International models**
+**Japan's koban** system places small neighbourhood police posts throughout cities; officers know residents, visit households and handle minor problems, contributing to very low crime and high trust. The **UK's** neighbourhood policing teams combine police officers with community support officers who focus on local priorities set with residents. **Chicago's Alternative Policing Strategy (CAPS, 1993)** introduced regular beat meetings between police and residents to identify and solve problems. Pakistan can adapt these ideas: small police posts (chowkis) in markets and katchi abadis staffed by the same officers for several years; regular beat meetings in mosques, schools and community halls; and joint problem-solving with municipal bodies on lighting, encroachments and drug dens.
+
+**Measuring success**
+Community policing should be judged by indicators beyond arrests: reporting rates, public satisfaction surveys, fear-of-crime surveys, number of problems solved, complaints against police, and repeat victimisation. Publishing these indicators would create incentives for police leaders to invest in partnership.
+
+**Community policing and counter-terrorism**
+In areas affected by militancy, community policing can provide early warning — residents notice strangers, new recruiters or changes in young people's behaviour. But it must be done carefully: if communities feel used only as informants, or if information leads to abuses, trust collapses. Protecting informants' identities, acting lawfully and showing results that benefit the community are essential.
+
+**Role of women officers**
+Women officers are central to community policing in Pakistan. Many women will not visit a police station staffed only by men; women's desks and female beat officers make it possible to report domestic violence, harassment and child abuse, and to involve women in community safety forums.
+
 **Conclusion**
 Community policing offers Pakistan a way to turn the public from suspects into partners. Its benefits — trust, information, prevention — are proven elsewhere and visible in local successes such as the CPLC and KP's Dispute Resolution Councils. But it cannot be added onto a colonial structure as a project; it requires a change of police culture, incentives and oversight. With that change, it can become the foundation of law and order.
 
-*(about 1,050 words)*
+*(about 990 words including outline)*

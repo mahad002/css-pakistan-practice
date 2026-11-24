@@ -1,6 +1,6 @@
 # Model Answers — Journalism & Mass Communication
 
-Nine full answers, each about 1,000–1,100 words including outline and headings — roughly what a strong candidate can hand-write in 35 minutes. Structure: outline → introduction with thesis → theory/definitions → Pakistan with dated evidence → critical analysis → way forward → conclusion.
+Nine full answers, each about 950–1,050 words including outline and headings — roughly what a strong candidate can hand-write in 35 minutes. Structure: outline → introduction with thesis → theory/definitions → Pakistan with dated evidence → critical analysis → way forward → conclusion.
 
 Write your own answer first, under time, then compare. Facts are as checked on 24 Nov 2026; update them before the exam.
 
@@ -49,6 +49,10 @@ The 2002 package transformed the landscape. The PEMRA Ordinance opened broadcast
 **The digital era**
 
 Civilian governments after 2008 added rights — Article 19-A on the right to information (2010), the Right of Access to Information Act 2017, and the Protection of Journalists and Media Professionals Act 2021 — but also new restrictions. The Prevention of Electronic Crimes Act 2016 criminalised online defamation (section 20) and let the PTA block "unlawful" content (section 37). PEMRA's 2023 amendment defined misinformation and disinformation. Punjab's Defamation Act 2024 created special tribunals with large interim damages; its key sections remain under challenge in the Lahore High Court. Most significantly, the PECA (Amendment) Act 2025 created a "fake news" offence punishable by up to three years and a Rs 2 million fine, a Social Media Protection and Regulatory Authority and a new cybercrime agency. X itself was blocked from February 2024 to May 2025.
+
+**Courts, unions and the struggle for freedom**
+
+Media freedom in Pakistan has been won as much in courtrooms and on the streets as in legislatures. The PFUJ's 1978 movement, in which hundreds of journalists courted arrest, kept the idea of a free press alive under martial law. Journalists and lawyers worked together in the 2007–09 lawyers' movement, which restored the judiciary and, with it, a forum for challenging media restrictions. Superior courts have since heard petitions against channel suspensions, PEMRA bans and PECA cases; the Islamabad High Court struck down the 2022 PECA ordinance, and petitions against the 2025 amendments and the Punjab Defamation Act are pending. The Supreme Court's 2013 Media Commission also proposed an independent regulator and transparent advertising. Courts, however, have been inconsistent, sometimes restraining media coverage themselves through contempt powers and orders on "media trials".
 
 **Assessment across regimes**
 
@@ -114,6 +118,10 @@ The dominant paradigm of the 1950s–60s (Lerner, Schramm and Rogers' diffusion 
 
 *Social issues.* Campaigns on child abuse, dowry, tolerance and road safety, and entertainment-education dramas such as *Udaari* on child sexual abuse, show how media can open taboo topics.
 
+**Case study: polio eradication communication**
+
+Polio shows both the power and the limits of DSC. Early campaigns relied on mass media announcements and door-to-door vaccinators, assuming parents would comply. Refusals grew in parts of Khyber Pakhtunkhwa, Balochistan and Karachi, driven by rumours that the vaccine caused infertility, by militant propaganda and, after 2011, by anger over a fake vaccination campaign used in intelligence work. Programmes adapted: they recruited local women as community mobilisers, invited respected ulema to issue endorsements, used local languages and celebrities, set up helplines to answer questions, and mapped refusals at household level using mobile data. These changes reflect a shift from the dominant paradigm's one-way persuasion to the alternative paradigm's dialogue and trust-building. The fact that Pakistan still reports cases shows that communication cannot succeed alone: security for workers, health services that people value and political consensus are also needed.
+
 **Methods**
 
 1. Audience research and segmentation before designing messages.
@@ -146,11 +154,15 @@ The dominant paradigm of the 1950s–60s (Lerner, Schramm and Rogers' diffusion 
 5. Closing the digital gender gap so that ICT-based DSC reaches women.
 6. Independent impact evaluation tied to funding.
 
+**DSC and the Sustainable Development Goals**
+
+Pakistan's commitments under the SDGs — health (SDG 3), education (SDG 4), gender equality (SDG 5), clean water (SDG 6) and climate action (SDG 13) — all depend on behaviour change and public participation. DSC is therefore not an optional add-on but a core component of every development budget. Allocating a fixed share of each programme's budget to research-based communication, as many international agencies do, would make this explicit.
+
 **Conclusion**
 
 DSC turns development plans into changes in people's lives. Pakistan's Lady Health Workers, polio campaigns and COVID-19 communication show what it can achieve. But one-way, Urdu-only, government-voiced campaigns cannot overcome distrust and diversity. Moving from telling people to talking with them is the key to making DSC a driver of progress.
 
-*(about 1,050 words including headings)*
+*(about 1,000 words including headings)*
 
 ---
 
@@ -205,6 +217,10 @@ The Ministry of Information and Broadcasting oversees the Press Information Depa
 
 Weaknesses persist: the PID is often seen as the ruling party's mouthpiece; advertising has been used to reward and punish outlets; responses to online disinformation are slow; research and evaluation are rare.
 
+**Crisis communication: the NCOC model**
+
+The National Command and Operation Centre, set up in March 2020 to coordinate the COVID-19 response, illustrates PR as governance in a crisis. It brought federal and provincial governments and the military into one structure, gave daily data-based briefings, ran a public dashboard, and used consistent messages on testing, distancing and later vaccination through television, SMS and social media. Its "smart lockdown" decisions were explained publicly, and it engaged religious scholars before Ramadan and Muharram gatherings. Communication scholars stress five principles that the NCOC partly followed: be first, be right, be credible, express empathy and promote action. Its weaknesses — mixed messages from politicians at times and slow responses to vaccine rumours — show that a single authoritative voice and rapid rebuttal are essential. The same principles apply to floods, heatwaves and terrorist attacks.
+
 **Risks: spin and propaganda**
 
 PR officers are called "spin doctors" when they frame failures as successes, plant stories or withhold information. Such tactics may win a news cycle but destroy credibility, and in governance, lost credibility makes every later campaign harder. Ethical codes — the IPRA Code of Athens (1965) and the PRSA code — require honesty, disclosure and respect for the public interest.
@@ -218,11 +234,15 @@ PR officers are called "spin doctors" when they frame failures as successes, pla
 5. Training at the Information Service Academy in digital and crisis communication.
 6. Proactive disclosure under RTI laws.
 
+**PR and the CSS Information Group**
+
+For a CSS candidate, this topic is practical. Officers of the Information Group serve in the PID, the Ministry of Information and press sections of Pakistan's missions abroad. Their effectiveness depends on professional skills — media relations, crisis communication, digital analytics and ethical judgement — rather than on control of advertising budgets.
+
 **Conclusion**
 
 PR is a tool of governance when it informs, listens and warns; it becomes a tool of manipulation when it spins. Governments and companies in Pakistan already use PR, but often in its one-way, press-agentry form. Adopting the two-way symmetric model would strengthen both organisational reputations and public trust in the state.
 
-*(about 1,050 words including headings)*
+*(about 1,000 words including headings)*
 
 ---
 
@@ -296,6 +316,10 @@ The credibility of the source and change agents; cost and infrastructure; govern
 
 *COVID-19 vaccines (2021)*: initial hesitancy gave way after mandates, celebrity and religious endorsements, and visible uptake.
 
+**Diffusion in the digital age**
+
+Social media have changed how diffusion works. Awareness now spreads in hours, not years, and early adopters are often online influencers rather than village elders. Platforms make innovations highly observable: a neighbour's rooftop solar panels or a friend's mobile wallet transaction appear in social feeds. Online reviews and demonstrations increase trialability. But the same networks spread rumours that stall adoption, as with vaccine misinformation. Network research shows that innovations sometimes need "complex contagion" — repeated exposure from several trusted contacts — rather than a single message (Damon Centola). For Pakistani planners, this means combining digital campaigns with trusted local messengers, monitoring online rumours in real time, and paying attention to groups left out by the digital divide, especially rural women, who may otherwise become "laggards" not by choice but by exclusion.
+
 **Criticisms**
 
 1. *Pro-innovation bias*: assumes innovations are good.
@@ -304,11 +328,15 @@ The credibility of the source and change agents; cost and infrastructure; govern
 4. *Equality issue*: diffusion can widen gaps between rich and poor.
 5. *Top-down*: rooted in the dominant paradigm; ignores participation. Rogers himself declared the "passing of the dominant paradigm" in 1976.
 
+**Lessons for communicators**
+
+For a campaign designer, the theory gives a practical sequence: segment the audience by likely adopter category; recruit early adopters and opinion leaders first; stress relative advantage and compatibility in local terms; allow small trials; make results visible; and keep listening for rumours and objections at each stage of the decision process. Measuring adoption over time, rather than counting messages broadcast, shows whether diffusion is really happening.
+
 **Conclusion**
 
 Diffusion of innovations explains why some ideas sweep through societies while others stall. Its adopter categories show the importance of early adopters and opinion leaders, and its five attributes give planners a checklist. In Pakistan, it explains the success of mobile money and the struggles of polio and family planning campaigns. Used with attention to trust, equity and participation, it remains a powerful guide for development communication.
 
-*(about 1,050 words including headings)*
+*(about 950 words including headings)*
 
 ---
 
@@ -352,6 +380,10 @@ The book was written in the United States at the height of the Cold War, shortly
 
 *Achievements.* It inspired journalistic codes of ethics, press councils, public service broadcasting such as the BBC model, and ideas of objectivity and balance.
 
+**The other two theories in brief**
+
+For contrast, the *authoritarian* theory, rooted in Tudor and Stuart England and in thinkers such as Hobbes, holds that the press must support the state; licensing, censorship and sedition laws enforce this. Colonial India's press acts are examples. The *Soviet communist* theory, based on Marx and Lenin, treats the media as instruments of the party to educate and mobilise the working class; private ownership is excluded. Both deny the press a watchdog role over the state, which is why the authors placed them on the "unfree" side.
+
 **How they reflected mid-20th-century conditions**
 
 1. *Cold War ideology*: the book divided the world into "free" systems (libertarian, social responsibility) and "unfree" ones (authoritarian, Soviet), echoing US foreign policy.
@@ -371,6 +403,10 @@ The book was written in the United States at the height of the Cold War, shortly
 **Applicability to Pakistan**
 
 Pakistan's system is a hybrid. Its private, competitive media resemble the libertarian model; PEMRA's 2015 code of conduct and the Press Council's ethical code use social responsibility language (accuracy, privacy, no glorification of terrorism, protection of victims). But authoritarian practices persist through licensing, advertising pressure, PECA prosecutions and bans on live coverage, such as PEMRA's October 2026 directive. Hallin and Mancini's "polarised pluralist" model, with its political parallelism and clientelism, describes Pakistan's polarised talk-show culture better than any of the four theories.
+
+**Beyond the four theories**
+
+McQuail's development media theory (media should support national development priorities) and democratic-participant theory (small-scale, community media serving citizens' own needs) were added because developing and grassroots contexts did not fit the original four. Christians and colleagues (2009) later described media roles rather than systems: monitorial, facilitative, radical and collaborative — a more flexible framework for today's mixed systems.
 
 **Conclusion**
 
@@ -428,6 +464,10 @@ Critics point to homogenisation of tastes, decline of local languages and art fo
 
 Dal Yong Jin (2015) argues that dominance has shifted from content to infrastructure. A handful of US companies — and increasingly Chinese ones such as TikTok's owner — control search, social media, app stores and advertising. Local news outlets lose advertising revenue to these platforms; algorithms favour content in dominant languages; AI systems trained mostly on Western data may reproduce Western norms. Communication practices worldwide, from how news is written for search engines to how politicians campaign, are shaped by platform logic.
 
+**Global information flows and the MacBride legacy**
+
+The MacBride Commission (1977–80), chaired by the Irish Nobel laureate Seán MacBride and set up by UNESCO, documented the imbalance in news and programme flows between North and South and made 82 recommendations: strengthening Southern news agencies and broadcasting, reducing telecom tariffs, protecting journalists, democratising communication and protecting cultural identity. The United States and Britain saw its call for a New World Information and Communication Order as a threat to press freedom and left UNESCO in the mid-1980s. Four decades later the internet has reduced the cost of producing and distributing content, but new imbalances have appeared: a few platforms capture most digital advertising, global South languages are under-represented online, and algorithms decide visibility. The MacBride debate about "many voices, one world" is therefore again relevant.
+
 **Pakistan**
 
 In the 1990s satellite dishes and cable brought Indian films and Western shows, provoking fears for national culture. The private channel boom after 2002 reduced dependence: Pakistani dramas now attract large audiences in India, the Gulf and the diaspora, and Coke Studio's "Pasoori" (2022) reached global audiences. Turkish dramas such as *Diriliş: Ertuğrul*, aired on PTV from 2020, show a regional contra-flow framed as shared Muslim heritage. Yet young Pakistanis spend increasing time on global platforms, regional languages are under pressure, and policy debates swing between protection (bans on Indian content, PEMRA rules on foreign content) and openness.
@@ -440,8 +480,244 @@ In the 1990s satellite dishes and cable brought Indian films and Western shows, 
 4. Media and digital literacy so audiences engage critically.
 5. Fair platform regulation that protects local news revenue and local-language moderation without censorship.
 
+**A balanced judgement**
+
+Cultural influence is not in itself harmful; exchange has always enriched cultures, and Pakistani culture itself blends Persian, Arab, Central Asian, South Asian and British influences. The concern is inequality: when one set of producers or platforms controls distribution and revenue, smaller cultures lose the means to tell their own stories.
+
 **Conclusion**
 
 The classic cultural imperialism thesis exaggerated audiences' passivity and missed the rise of regional and Southern media. But inequality in global communication has not disappeared; it has moved from programme catalogues to platforms and algorithms. Preserving cultural diversity today means building strong local creative industries and fair rules for the digital infrastructure through which all cultures now travel.
 
+*(about 1,000 words including headings)*
+
+---
+
+## Model Answer 7: Assess the current state of freedom of expression in Pakistan. What threats and challenges do journalists face, and what measures can address them?
+
+*(CSS 2025 Q5; 2024 Q3; related 2018 Q7.)*
+
+**Outline**
+1. Introduction
+2. Constitutional and international standards
+3. The state of freedom in 2025–26
+4. Threats and challenges to journalists
+5. Societal impacts
+6. Counter-arguments: why the state regulates
+7. Measures
+8. Conclusion
+
+**Introduction**
+
+Freedom of expression is the foundation of democratic accountability. Pakistan's Constitution protects it in Article 19 and the right to information in Article 19-A, and Pakistan is a party to the ICCPR. Yet journalists describe an environment of shrinking space. Reporters Without Borders ranked Pakistan 158th of 180 countries in 2025 and 153rd in 2026, still in its "very serious" category. This answer argues that freedom of expression is under pressure from legal, physical, economic and digital threats, and that the state's legitimate concerns about security and disinformation can be met without silencing journalism.
+
+**Standards**
+
+Article 19 allows "reasonable restrictions" for the glory of Islam, national security, public order, morality, friendly relations, contempt of court and incitement. International law, as explained in the UN Human Rights Committee's General Comment 34 (2011), requires restrictions to be provided by law, necessary and proportionate. The test is not whether limits exist, but whether they are narrow and justified.
+
+**The state of freedom in 2025–26**
+
+*Legal pressure.* The PECA (Amendment) Act 2025 created a vaguely defined "fake news" offence (up to three years and a Rs 2 million fine) and a Social Media Protection and Regulatory Authority; journalists' unions have challenged it in the Islamabad High Court, and Reporters Without Borders reported several journalists and YouTube channels targeted under PECA within a year. Punjab's Defamation Act 2024 created special tribunals and large interim damages. The Official Secrets (Amendment) Act 2023 widened secrecy offences.
+
+*Regulatory pressure.* PEMRA has banned coverage of particular politicians' speeches (2023) and, in October 2026, ordered channels not to broadcast live coverage of attacks or "unpleasant incidents", allowing only officially verified information. PEMRA itself lacked a permanent chair for months.
+
+*Digital controls.* X was blocked from February 2024 to May 2025; mobile internet has been suspended during protests.
+
+*Institutions.* On the positive side, the federal Commission for the Protection of Journalists and Media Professionals was constituted in November 2025 under the 2021 Act, and Sindh has its own commission. The RTI Act 2017 and the Pakistan Information Commission offer a legal path to information.
+
+**Threats and challenges to journalists**
+
+1. *Violence and impunity*: killings and assaults, particularly in Khyber Pakhtunkhwa, Balochistan and rural Sindh, with very few convictions; the killing of Arshad Sharif in Kenya (2022) remains contested.
+2. *Abductions and intimidation*: journalists have been picked up and released, as in the case of Matiullah Jan (2020).
+3. *Legal harassment*: PECA, sedition and defamation cases, often filed by powerful complainants.
+4. *Online abuse*: coordinated trolling and smear campaigns; women journalists face sexualised abuse, as a 2020 joint statement by women journalists highlighted.
+5. *Economic insecurity*: delayed salaries, layoffs and contracts without protection; the PEMRA (Amendment) Act 2023 tied government advertising to timely salary payments, but enforcement is weak.
+6. *Owner and advertiser pressure*: government is the largest single advertiser; owners' business interests limit coverage.
+7. *Self-censorship*: unwritten "red lines" on the military, judiciary, religion and ethnic movements.
+8. *Polarisation*: journalists are labelled partisan by rival political camps.
+
+**Societal impacts**
+
+Weak accountability allows corruption and misgovernance to flourish. When credible journalism is silenced, rumours and disinformation fill the vacuum, as during political crises and the May 2025 conflict with India. Public trust declines and audiences retreat into partisan echo chambers. Investors and international partners read press freedom as a signal of governance. Talented journalists leave the profession or the country.
+
+**Counter-arguments**
+
+The state argues that Pakistan faces terrorism, hybrid warfare and a flood of online disinformation that threatens security and social harmony; that some media outlets act irresponsibly, glorify violence or conduct "media trials"; and that platforms evade accountability. These concerns are real. But broad, vague laws and blanket bans are blunt tools: they punish legitimate criticism, invite selective enforcement and, by reducing trust in official information, can worsen the very misinformation they target.
+
+**Freedom with responsibility**
+
+Freedom of expression is not absolute, and journalism carries duties of accuracy, fairness and care, as social responsibility theory and Pakistan's own codes require. The media's record is mixed: sensational coverage of terrorist attacks, "media trials" and unverified claims have given critics ammunition. The answer is responsibility enforced mainly by the profession itself, with courts as the final check, not by executive bodies with vague powers.
+
+**Measures**
+
+1. *Law reform*: amend PECA section 26A and section 20 to define offences narrowly; decriminalise defamation and use civil remedies; subject content-blocking to judicial review.
+2. *Independent regulation*: transparent, parliamentary appointment and fixed tenure for PEMRA and SMPRA heads; reasoned, proportionate decisions with appeals.
+3. *Safety and justice*: fund and empower the journalists' protection commissions; special prosecutors and time-bound trials for crimes against journalists; employer-funded insurance and safety training as required by the 2021 Act.
+4. *Economic fairness*: an advertising policy based on audited reach; enforce salary protections.
+5. *Self-regulation*: strengthen the Press Council and create an independent broadcasters' complaints body so that the state has less reason to intervene.
+6. *Media literacy and fact-checking* to counter disinformation without censorship.
+7. *Dialogue*: consult PFUJ, APNS, CPNE and PBA before media legislation.
+
+**The role of audiences and civil society**
+
+Press freedom also depends on public support. Where citizens value independent journalism, subscribe to credible outlets, report abuse and resist sharing rumours, pressure on journalists is harder to sustain. Civil society groups, bar associations and human rights bodies such as HRCP and the National Commission for Human Rights strengthen this support by documenting violations and litigating.
+
+**Conclusion**
+
+Freedom of expression in Pakistan is not absent, but it is fragile: guaranteed in the Constitution, narrowed by ordinary laws, threatened by violence and weakened by economic pressure. The modest improvement in the 2026 RSF ranking shows change is possible. Pakistan can address genuine security and disinformation concerns through narrow laws, independent regulators and credible self-regulation — an approach that protects both national interests and the public's right to know.
+
 *(about 1,050 words including headings)*
+
+---
+
+## Model Answer 8: What ethical challenges do journalists face in the digital age? How do these affect the credibility and responsibility of journalism in Pakistan?
+
+*(CSS 2026 Q5; 2024 Q7.)*
+
+**Outline**
+1. Introduction
+2. Foundations of journalism ethics
+3. Ethical challenges of the digital age
+4. Effects on credibility and responsibility in Pakistan
+5. Responses: newsroom, industry, regulation, audiences
+6. Conclusion
+
+**Introduction**
+
+Journalism's ethical core — truth, independence, fairness, minimising harm and accountability — was developed for newspapers and broadcasters with clear gatekeepers and deadlines. Digital media have removed many of those gatekeepers, multiplied publishers and made speed and engagement the measure of success. This answer identifies the main ethical challenges of the digital age and argues that in Pakistan they have deepened a credibility crisis, which can be reversed only if professional journalism makes verification and transparency its competitive advantage.
+
+**Foundations**
+
+The US Society of Professional Journalists' code (revised 2014) asks journalists to seek truth and report it, minimise harm, act independently and be accountable and transparent. The IFJ's Global Charter of Ethics for Journalists (2019) and, in Pakistan, the Press Council's Ethical Code of Practice (2002) and PEMRA's Code of Conduct (2015) set similar standards: accuracy, right of reply, privacy, protection of sources and victims, and no incitement.
+
+**Ethical challenges of the digital age**
+
+1. *Speed versus accuracy*: the race to be first on X, WhatsApp or YouTube pushes unverified "breaking news", and errors travel faster than corrections.
+2. *Verification of user-generated content*: images and videos from conflict zones or protests may be old, out of context or manipulated.
+3. *Deepfakes and AI-generated content*: synthetic audio and video, seen in Pakistan's 2024 election campaign, make authenticity harder to establish; newsrooms' own use of AI raises questions of transparency, bias and error.
+4. *Disinformation campaigns*: coordinated networks and bots spread false narratives; journalists who amplify them, even by debunking clumsily, can spread them further.
+5. *Clickbait and metrics*: revenue tied to clicks and YouTube views rewards outrage, sensational thumbnails and partisan framing.
+6. *Privacy and harm*: sharing victims' images, identifying minors or survivors of sexual violence, and doxxing.
+7. *Conflicts of interest*: sponsored content and paid partnerships without disclosure; political patronage of YouTube channels; "lifafa" journalism in a digital form.
+8. *Opinion presented as news*: anchors and YouTubers blur reporting and commentary.
+9. *Plagiarism and content theft*: copying without attribution is easier than ever.
+10. *Source protection under surveillance*: digital communication exposes confidential sources.
+11. *Online harassment*: journalists, especially women, face abuse that can push them to self-censor.
+
+**Effects on credibility and responsibility in Pakistan**
+
+*Credibility.* When mainstream outlets carry unverified claims or partisan narratives, audiences lose trust and turn to influencers who confirm their views. The polarisation of talk-show anchors since 2018 has led many viewers to judge journalists by political loyalty rather than accuracy. During the May 2025 India–Pakistan conflict, false claims circulated on both sides' media and social media, damaging credibility.
+
+*Responsibility.* Because professional journalists are blamed for the wider information disorder, governments justify restrictive laws such as the PECA (Amendment) Act 2025 and PEMRA's October 2026 restrictions on live coverage. Irresponsible coverage of blasphemy accusations has contributed to mob violence, as in Jaranwala (2023). At the same time, laws that criminalise "fake news" can deter legitimate reporting, so ethics and freedom are linked: an industry that regulates itself credibly gives the state fewer excuses.
+
+*The economic trap.* Declining print and TV revenues push outlets toward cheap, click-driven content, while investigative reporting, which builds trust, is expensive.
+
+**A practical verification checklist**
+
+Before publishing digital content, a responsible journalist asks: Who is the original source, and can I contact them? When and where was the image or video first published (reverse image search, metadata, shadows and landmarks)? Is there independent confirmation from a second, unrelated source? Could the content be manipulated or AI-generated (inconsistent lighting, unnatural speech, absent provenance)? Who benefits if this spreads? What harm could publication cause to victims, minors or communities, and does the public interest outweigh it? If any answer is uncertain, the story should say so clearly or wait. Newsrooms in Pakistan can build these steps into editorial workflows, so that speed never overrides verification, and can publish a short note explaining how a sensitive story was verified, which itself builds trust.
+
+**Responses**
+
+*Newsroom level*
+1. Verification desks using reverse image search, metadata and geolocation; "verify before you publish" as policy.
+2. Visible corrections and transparency about sources and AI use.
+3. Clear labels for opinion, analysis and sponsored content.
+4. Guidelines for reporting terrorism, sectarian issues, blasphemy allegations, gender-based violence and suicide.
+5. Digital safety and anti-harassment support for staff.
+
+*Industry level*
+6. Update the Press Council's code and PEMRA's code for digital platforms; create an independent complaints body covering digital outlets.
+7. Collaborative fact-checking initiatives among outlets, universities and fact-checkers.
+8. Training through press clubs and journalism departments.
+
+*Regulatory level*
+9. Narrow, rights-compatible laws on incitement and privacy, rather than vague "fake news" offences; independent oversight.
+
+*Audience level*
+10. Media and digital literacy in schools to create demand for verified news.
+
+**The business case for ethics**
+
+Ethics is also a survival strategy. As audiences drown in unverified content, outlets that are consistently accurate can build subscriptions, loyal audiences and partnerships with platforms and advertisers who want "brand-safe" environments. Trust is the one asset that social media influencers find hardest to copy.
+
+**Conclusion**
+
+Digital technology has not changed journalism's ethical principles, but it has made them harder and more important to follow. In Pakistan, ethical lapses have fed a credibility crisis that governments use to justify control. Journalism that verifies, discloses and corrects can turn trust into its most valuable asset and defend its freedom by deserving it.
+
+*(about 950 words including headings)*
+
+---
+
+## Model Answer 9: Political polarisation among Pakistani news anchors has undermined the credibility of current affairs talk shows. Explain the reasons, with examples.
+
+*(CSS 2026 Q3; related 2019 Q5, 2020 Q6.)*
+
+**Outline**
+1. Introduction
+2. The talk-show phenomenon
+3. Theoretical lenses
+4. Reasons for polarisation
+5. Effects on credibility
+6. Counter-view
+7. Remedies
+8. Conclusion
+
+**Introduction**
+
+Since the private television boom after the PEMRA Ordinance of 2002, prime-time current affairs talk shows have been the centre of Pakistan's political conversation. Their anchors became celebrities and, increasingly, political actors. Since around 2017, audiences, politicians and media scholars have noted that many anchors are seen as aligned with one political camp or another. This answer explains the structural, economic and political reasons behind this polarisation and argues that it has damaged the credibility of talk shows and of journalism more broadly.
+
+**The talk-show phenomenon**
+
+Talk shows are cheap to produce compared with field reporting: a studio, an anchor and a panel of politicians. They attract ratings through conflict, and they dominate the 7 pm to 11 pm slot on news channels. Anchors set the agenda, frame issues and often express strong opinions.
+
+**Theoretical lenses**
+
+*Agenda-setting and framing* (McCombs and Shaw; Entman) explain anchors' power over what audiences think about and how. *Hallin and Mancini's polarised pluralist model* (2004) describes media systems with strong political parallelism, clientelism and an interventionist state — features visible in Pakistan. *Selective exposure* explains why audiences gravitate to anchors who confirm their views, creating echo chambers. The *propaganda model* (Herman and Chomsky) highlights ownership, advertising and flak as filters.
+
+**Reasons for polarisation**
+
+1. *Ownership and business interests*: media groups have wider business interests and relationships with governments and political parties, which shape editorial lines.
+2. *Ratings economics*: conflict, outrage and personality drive ratings; balanced, nuanced discussion rates poorly.
+3. *Political crisis since 2017*: the Panama Papers case and Nawaz Sharif's disqualification (2017), the 2018 election, the no-confidence vote that removed Imran Khan's government (April 2022), the events of 9 May 2023 and the disputed 2024 election divided the country into intense camps; audiences demanded that anchors take sides.
+4. *State and institutional pressure*: some anchors were taken off air or faced cases, while others were perceived as close to the establishment, so viewers read every anchor's position as a political alignment.
+5. *The YouTube economy*: anchors who left or were removed from television built large YouTube channels where monetisation rewards partisan content and loyal audiences.
+6. *Weak editorial control*: few channels have strong editorial boards, fact-checking of guests or clear separation between news and opinion.
+7. *Social media amplification*: clips are cut and shared by party social media wings; anchors are celebrated or trolled by rival camps, reinforcing their positions.
+8. *Personal branding*: anchors' influence and income depend on a recognisable stance.
+
+**Effects on credibility**
+
+1. Audiences increasingly treat talk shows as partisan entertainment rather than information.
+2. Unverified claims made by guests or anchors are repeated without challenge, spreading misinformation.
+3. Journalists as a profession are labelled "sold out" or "traitors" by opposing camps, eroding public trust and exposing them to harassment.
+4. Talk shows contribute to political polarisation, making consensus on national issues harder.
+5. Governments use partisan excesses to justify restrictions, such as PEMRA notices or PECA cases.
+6. Serious policy issues — the economy, climate, education — receive less space than personality clashes.
+
+**Comparative perspective**
+
+Polarised commentary is not unique to Pakistan. In the United States, cable channels such as Fox News and MSNBC built audiences around partisan opinion programming, and surveys show trust in news divided along party lines. In India, many television anchors are criticised for nationalist, government-aligned debates. In contrast, public service broadcasters such as the BBC operate under statutory impartiality rules enforced by an independent regulator (Ofcom), which limit open partisanship in news. Pakistan's PEMRA code also requires impartiality and right of reply, but enforcement is selective and often seen as political, so it neither protects fairness nor commands respect. The comparison suggests two paths: stronger independent regulation of impartiality, or transparent labelling of opinion channels while protecting a core of impartial news, including a reformed PTV.
+
+**Counter-view**
+
+Some argue that opinionated anchors are normal in competitive media systems (as on US cable news), that audiences know they are watching opinion, and that diverse partisan voices together create pluralism. Others note that much "polarisation" is a reaction to pressure on independent journalists, and that labelling critical journalists as partisan is itself a political tactic. These points are fair, but they do not remove the need for standards of accuracy and fairness.
+
+**Remedies**
+
+1. Strong editorial boards and in-house ombudsmen, as already required by PEMRA's 2015 code.
+2. Clear labelling of opinion programmes and disclosure of anchors' conflicts of interest.
+3. Live or post-show fact-checking of claims, with on-air corrections.
+4. A larger, independent and transparent ratings system to reduce the pull of sensationalism.
+5. Investment in field reporting and explanatory journalism.
+6. Training in balanced interviewing and fair treatment of guests.
+7. An independent broadcasters' complaints commission to handle bias complaints without state censorship.
+8. Media literacy so audiences can distinguish news from opinion.
+
+**Role of audiences**
+
+Audiences also share responsibility: by rewarding outrage with views and shares, they encourage it. Media literacy campaigns, viewer feedback mechanisms and support for outlets that practise balanced journalism can shift incentives over time.
+
+**Conclusion**
+
+Polarisation among anchors is the product of ratings economics, ownership interests, a decade of political crisis, state pressure and the logic of social media. It has cost talk shows and journalism much of their credibility. Restoring trust does not require anchors without views, but programmes that separate fact from opinion, challenge every side and correct their errors.
+
+*(about 950 words including headings)*
