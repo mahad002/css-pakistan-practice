@@ -502,7 +502,7 @@
       $('.navgrid', body).addEventListener('click', (e) => { const b = e.target.closest('button[data-i]'); if (b) { ex.i = +b.dataset.i; save(); renderMCQ(); } });
     };
     const renderSubj = () => {
-      body.innerHTML = `<div class="card"><p class="notice info small" style="margin-top:0">${ex.essay ? 'Choose <b>one</b> topic. Write the outline and essay by hand in 3 hours. Aim for 2,500–3,000 words.' : `Attempt any <b>${ex.attemptSubj}</b>. Write by hand on paper: about 35–40 minutes per answer.`} Mark yourself after submitting.</p>
+      body.innerHTML = `<div class="card"><p class="notice info small" style="margin-top:0">${ex.essay ? 'Choose <b>one</b> topic. Write the outline and essay by hand in 3 hours. Aim for 2,500–3,000 words.' : `Attempt any <b>${ex.attemptSubj}</b>. Write by hand on paper: about 35–40 minutes per answer. Some real papers add section rules (e.g. Political Science: 2 from each section; Criminology: one from each section); see the pack's how-to-use file.`} Mark yourself after submitting.</p>
         ${ex.subj.map((s, k) => `<div class="subj"><span class="pill tag ${s.tag.startsWith('CSS') ? 'acc' : ''}">${esc(s.tag)}</span><span class="small muted">${esc(s.topic)}</span><div style="margin-top:6px;font-size:1.05rem"${dirAttr(s.q)}><b>Q${k + 2}.</b> ${esc(s.q)}</div></div>`).join('')}</div>`;
     };
     const renderTab = () => (ex.tab || tab) === 'mcq' && qs.length ? renderMCQ() : renderSubj();
