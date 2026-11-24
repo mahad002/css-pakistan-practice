@@ -106,8 +106,8 @@ Write the answer you know best first. Never spend more than 40 minutes on one an
 | `03-Notes/Paper-I/` | 15 files: 7 on thinkers, 8 on Part B topics |
 | `03-Notes/Paper-II/` | 16 files: 10 country systems, integration, Muslim nationalism, Pakistan (3), IR and foreign policy |
 | `04-Model-Answers.md` | 12 full answers (6 per paper) written as you should write them |
-| `05-MCQ-Bank.md` | 200 MCQs with keys and reasons |
-| `06-Question-Bank.md` | 90+ subjective questions (past and likely) by topic |
+| `05-MCQ-Bank.md` | 230 MCQs with keys and reasons |
+| `06-Question-Bank.md` | 248 subjective questions (169 past, 79 likely) by topic |
 | `07-Quick-Revision.md` | One page per section, for the last month |
 | `08-Resources.md` | Books and free sources |
 | `COVERAGE.md` | What is complete, what is short, what to verify |
