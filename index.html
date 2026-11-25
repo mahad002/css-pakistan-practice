@@ -2,51 +2,31 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CSS Pakistan Practice</title>
-<meta name="description" content="A free self-study course for Pakistan's CSS exam: notes for every paper, a syllabus checklist, 5,000+ MCQs, mock exams and interview guidance.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23155e4b'/><text x='32' y='42' font-size='26' font-family='Georgia,serif' text-anchor='middle' fill='white'>CSS</text></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CSS Practice</title>
+<meta name="description" content="A free self-study course for Pakistan's CSS exam: set your own dates, see what's left, and study every paper step by step, with notes, 5,000+ MCQs, mock exams and interview guidance.">
+<meta name="theme-color" content="#0f4d3a">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f4d3a'/><rect x='10' y='29' width='44' height='6' rx='3' fill='%23e9e3cc'/><circle cx='22' cy='32' r='8' fill='%230f4d3a' stroke='%23e9e3cc' stroke-width='4'/><circle cx='44' cy='32' r='8' fill='%23f2c230'/></svg>">
+<link rel="preload" href="site/fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500&display=swap">
 <link rel="stylesheet" href="site/assets/app.css">
 <script>
-  try { const t = localStorage.getItem('cssp.theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  try { const t = localStorage.getItem('cssp.theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
 </script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="topbar">
-  <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">
-    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-  </button>
-  <a class="brand" href="#/"><span class="brand-mark">CSS</span><span class="brand-text">Pakistan Practice</span></a>
-  <nav class="topnav" aria-label="Main">
-    <a href="#/" data-route="home">Home</a>
-    <a href="#/checklist" data-route="checklist">Checklist</a>
-    <a href="#/practice" data-route="practice">Practice</a>
-    <a href="#/exam" data-route="exam">Create exam</a>
-    <a href="#/questions" data-route="questions">Question bank</a>
-    <a href="#/interview" data-route="interview">Interview</a>
-    <a href="#/documents" data-route="documents">Downloads</a>
-  </nav>
-  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">
-    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="currentColor"/></svg>
-  </button>
+<header class="top">
+  <div class="top-in">
+    <a class="logo" href="#/">CSS <span>PRACTICE</span></a>
+    <nav class="nav" aria-label="Main" id="nav"></nav>
+    <div class="top-meta" id="topMeta"></div>
+  </div>
 </header>
-<div class="layout">
-  <aside class="sidebar" id="sidebar" aria-label="Documents">
-    <div class="side-search">
-      <input type="search" id="docSearch" placeholder="Search notes…" aria-label="Search documents" autocomplete="off">
-    </div>
-    <div class="combo-pick">
-      <label for="comboSelect">My optional subjects</label>
-      <select id="comboSelect"></select>
-    </div>
-    <nav id="tree" class="tree"></nav>
-  </aside>
-  <div class="scrim" id="scrim"></div>
-  <main id="main" class="main" tabindex="-1">
-    <div class="loading">Loading…</div>
-  </main>
-</div>
+<main id="main" class="main" tabindex="-1"><div class="loading">Loading your line…</div></main>
+<nav class="tabbar" aria-label="Main" id="tabbar"></nav>
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
 <script src="site/assets/app.js"></script>

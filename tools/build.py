@@ -266,25 +266,46 @@ MANUAL = {
                   ('After allocation', ['Read: CSA and Common Training Programme'])],
 }
 
+def _freq_word(v):
+    v = (v or '').strip()
+    if not v or v in ('—', '-'): return None
+    if re.match(r'^(High|Medium|Low)', v, re.I): return v.split()[0].capitalize()
+    if '●' in v or '○' in v:
+        n = v.count('●'); return {0: 'Not asked', 1: 'Low', 2: 'Medium'}.get(n, 'High')
+    m = re.match(r'^(\d+)', v)
+    if m:
+        n = int(m.group(1)); return 'High' if n >= 5 else 'Medium' if n >= 3 else 'Low' if n >= 1 else 'Not asked'
+    return None
+
 def parse_table_checklist(text):
-    items = []; cur = ''; parent = ''; hdr_sub = False
+    items = []; cur = ''; parent = ''; hdr = []; prev = ''
     for line in text.splitlines():
         h = re.match(r'^(#{2,3})\s+(.+)', line)
-        if h: cur = strip_md(h.group(2)); parent = ''; continue
-        if not line.startswith('|') or '☐' not in line: continue
+        if h: cur = strip_md(h.group(2)); parent = ''; hdr = []; prev = line; continue
+        if re.match(r'^\|\s*:?-{2,}', line) and prev.startswith('|'):
+            hdr = [c.strip().lower() for c in prev.strip().strip('|').split('|')]; prev = line; continue
+        prev = line
+        if not line.startswith('|'): continue
         cells = [c.strip() for c in line.strip().strip('|').split('|')]
-        if len(cells) < 2: continue
-        body = cells[1:]
-        low = ' '.join(body).lower()
-        if any(w in low for w in ('official topic', 'syllabus item', 'sub-topic')) and len(body) > 1 and ('frequency' in low or 'freq' in low or 'notes' in low):
-            hdr_sub = 'sub-topic' in low; continue
-        if hdr_sub:
-            if body[0]: parent = strip_md(body[0])
-            text_ = f"{parent} — {strip_md(body[1])}" if len(body) > 1 and body[1] else parent
+        if len(cells) < 2 or '☐' not in cells[0]: continue
+        low = ' '.join(cells[1:]).lower()
+        if 'official topic' in low or 'syllabus item' in low: continue
+        col = lambda *names: next((cells[i] for i, hd in enumerate(hdr) if i < len(cells) and any(n in hd for n in names)), '')
+        sub = col('sub-topic')
+        if sub or any('sub-topic' in hd for hd in hdr):
+            if cells[1]: parent = strip_md(cells[1])
+            text_ = f"{parent} — {strip_md(sub)}" if sub else parent
+        elif re.fullmatch(r'[IVXL]+', strip_md(cells[1])) and len(cells) > 2:
+            text_ = strip_md(cells[1]) + '. ' + strip_md(cells[2])
         else:
-            text_ = strip_md(body[0])
+            text_ = strip_md(cells[1])
         if not text_: continue
-        items.append({'section': cur, 'text': text_})
+        it = {'section': cur, 'text': text_}
+        fq = _freq_word(col('freq', 'asked 20'))
+        if fq: it['freq'] = fq
+        note = re.search(r'`?([\w./-]+\.md)`?', col('notes') or '')
+        if note: it['notes'] = note.group(1)
+        items.append(it)
     return items
 
 def parse_box_checklist(text):
@@ -356,6 +377,69 @@ def ca_items():
             items.append({'section': lab, 'text': title_of(read(f), f), 'notes': rel(f)})
     return items
 
+# ---------------------------------------------------------------- topic → document links
+def heading_slug(t):
+    t = re.sub(r'<[^>]+>', '', t.lower())
+    return re.sub(r'[^a-z0-9_\u0600-\u06ff]+', '-', t).strip('-')[:60]
+
+STOP = set('the and for with from into its their this that what which are was were how why who of in on to a an by as at or is be all notes mcqs plus fact sheets read'.split())
+def words(t): return [w[:-1] if len(w) > 4 and w.endswith('s') else w for w in re.findall(r'[a-z0-9]+', t.lower()) if (len(w) > 2 or w.isdigit()) and w not in STOP]
+
+KEY_DOCS = [('howto', r'/00-(How-to-Use|Overview)'), ('syllabus', r'/01-Syllabus'), ('analysis', r'/0\d-Past-Paper-Analysis'),
+            ('qbank', r'/(QUESTION-BANK|06-Question-Bank|06-Interview-Question-Bank)\.md$'), ('mcq', r'/\d\d-MCQ-Bank\.md$'),
+            ('answers', r'/0\d-Model-Answers\.md$'), ('revision', r'/0\d-Quick-Revision\.md$'), ('plan', r'/\d\d-Practice-Plan\.md$'),
+            ('resources', r'/\d\d-Resources\.md$'), ('mocks', r'/(09-Mock-Tests|11-Mock-Papers)/')]
+
+OVERRIDES = {
+    'essay': [(r'^(Paper format|Decoding|Thesis|Outline format|Introductions|Body|Counter|Conclusions|Coherence|Handwriting)', '01-Essay-Method.md'),
+              (r'^Past-paper analysis', '02-Past-Paper-Analysis.md'), (r'^Model essays', '04-Model-Essays/00-Index.md'),
+              (r'^Evidence bank', '05-Evidence-Bank.md'), (r'^(Essays \d|Second reader)', '07-Practice-Plan.md')],
+    'mpt': [(r'^Read the format', '00-How-to-Use-This-Pack.md')],
+    'interview': [(r'^(Viva format|Personal and form|Home district|Degree-related|Current affairs refresh|Optional subjects refresh|Three mock)', '05-Viva-Voce.md'),
+                  (r'^Psychological', '04-Psychological-Assessment.md'), (r'^Medical', '03-Medical-Board.md'), (r'^Read: CSA', '08-After-Allocation.md')],
+}
+
+def link_checklist(chk, man):
+    docs = man['docs']; paths = {d['path'] for d in docs}
+    keydocs = {}
+    for pid, label, group, pre in PAPERS:
+        mine = sorted((d for d in docs if d['path'].startswith(pre)), key=lambda d: d['path'])
+        kd = {}
+        for k, rx in KEY_DOCS:
+            hit = next((d['path'] for d in mine if re.search(rx, '/' + d['path'][len(pre):])), None)
+            if hit: kd[k] = hit
+        keydocs[pid] = kd
+        study = [d for d in mine if not re.search(r'(QUESTION-BANK|Question-Bank|MCQ|COVERAGE|Resources|Past-Paper-Analysis|Syllabus|00-How|Practice-MCQs)', d['path'])]
+        paper = next(p for p in chk['papers'] if p['paper'] == pid)
+        for it in paper['items']:
+            target, at = None, None
+            n = it.get('notes')
+            for rx, rp in OVERRIDES.get(pid, []):
+                if re.search(rx, it['text']) and pre + rp in paths: target = pre + rp; break
+            if n and not target:
+                for c in (pre + n.lstrip('./'), n.lstrip('./')):
+                    if c in paths: target = c; break
+                if not target:
+                    base = n.split('/')[-1]
+                    target = next((d['path'] for d in mine if d['path'].endswith('/' + base)), None)
+            ws = set(words(it['text']))
+            if not target and ws:
+                best, bs = None, 0
+                for d in study:
+                    tw = set(words(d['title'] + ' ' + d['path'].split('/')[-1]))
+                    hw = set(words(' '.join(d['headings'])))
+                    sc = 3 * len(ws & tw) + len(ws & hw)
+                    if sc > bs: best, bs = d, sc
+                if best and bs >= 3: target = best['path']
+            if target and ws:
+                d = next(x for x in docs if x['path'] == target)
+                hs = [(len(ws & set(words(h))), h) for h in d['headings']]
+                hs = [x for x in hs if x[0] >= min(2, len(ws))]
+                if hs: at = heading_slug(max(hs, key=lambda x: x[0])[1])
+            it['doc'] = target or kd.get('syllabus') or kd.get('howto')
+            if at: it['at'] = at
+    return keydocs
+
 # ---------------------------------------------------------------- main
 def main():
     man = build_manifest()
@@ -370,7 +454,8 @@ def main():
         seen.add(q['id'])
         q['tag'] = mpt_tag(q)
     subj = build_subjective(); chk = build_checklist(); docs = build_documents()
-    meta = {'papers': [{'id': p, 'label': l, 'group': g, 'prefix': pre} for p, l, g, pre in PAPERS], 'combos': COMBOS}
+    keydocs = link_checklist(chk, man)
+    meta = {'papers': [{'id': p, 'label': l, 'group': g, 'prefix': pre, 'docs': keydocs.get(p, {})} for p, l, g, pre in PAPERS], 'combos': COMBOS}
     for name, obj in [('manifest', man), ('questions', qs), ('subjective', subj), ('checklist', chk), ('documents', docs), ('meta', meta)]:
         with open(os.path.join(OUT, name + '.json'), 'w', encoding='utf-8') as fh:
             json.dump(obj, fh, ensure_ascii=False, separators=(',', ':'))

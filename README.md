@@ -9,7 +9,8 @@ A free, complete self-study course for Pakistan's **CSS Competitive Examination*
 | | |
 |---|---|
 | **Notes for every paper** | The MPT screening test, all six compulsory papers (Essay, Précis & Composition, General Science & Ability, Current Affairs, Pakistan Affairs, Islamic Studies), and eight optional subjects across three ready-made combinations |
-| **Syllabus checklist** | Every syllabus item with four states (Not started → Studied once → Revised → Mastered), saved in your browser, with export and import |
+| **Your line to the exam** | Set your own exam date, start date, subjects and pace. The home screen shows your papers as stations on a line, how much is left at each, and a few suggested next tasks, each one tap from the exact notes |
+| **A path for every paper** | Understand the paper, learn the topics, practise, sit a mock. Every syllabus topic has four states (Not yet → Studied → Revised → Mastered) and links to its notes, saved in your browser with export and import |
 | **5,000+ MCQs** | Practice one at a time with explanations, or build timed exams, including full 200-question MPT mocks in the official split |
 | **2,800 written questions** | Past questions from 2016–2026 (paraphrased) plus likely questions for 2028, for outlines and timed answers |
 | **Create an exam** | MPT mocks, Part I (20 MCQs in 30 minutes), full written papers (20 MCQs + choose 4 of 7), essay papers, or a custom mix |
