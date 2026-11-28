@@ -10,8 +10,8 @@
 <link rel="preload" href="site/fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500&display=swap">
-<link rel="stylesheet" href="site/assets/app.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="site/assets/app.css?v=20261128">
 <script>
   try { const t = localStorage.getItem('cssp.theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
 </script>
@@ -27,8 +27,8 @@
 </header>
 <main id="main" class="main" tabindex="-1"><div class="loading">Loading your line…</div></main>
 <nav class="tabbar" aria-label="Main" id="tabbar"></nav>
-<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
-<script src="site/assets/app.js"></script>
+<script src="site/vendor/marked-12.0.2.min.js" defer></script>
+<script src="site/vendor/purify-3.1.6.min.js" defer></script>
+<script src="site/assets/app.js?v=20261128" defer></script>
 </body>
 </html>

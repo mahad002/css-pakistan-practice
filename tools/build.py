@@ -90,7 +90,7 @@ def build_manifest():
         for fn in sorted(filenames):
             if not fn.endswith('.md'): continue
             full = os.path.join(dirpath, fn); r = rel(full)
-            if r in PRIVATE or r == 'README.md' and dirpath == ROOT: continue
+            if r in PRIVATE or dirpath == ROOT and r in ('README.md', 'DESIGN.md', 'PRODUCT.md'): continue
             text = read(full)
             heads = [strip_md(h) for h in re.findall(r'^##\s+(.+)$', text, re.M)][:60]
             docs.append({'path': r, 'title': title_of(text, r), 'section': section_of(r),
@@ -455,7 +455,7 @@ def main():
         q['tag'] = mpt_tag(q)
     subj = build_subjective(); chk = build_checklist(); docs = build_documents()
     keydocs = link_checklist(chk, man)
-    meta = {'papers': [{'id': p, 'label': l, 'group': g, 'prefix': pre, 'docs': keydocs.get(p, {})} for p, l, g, pre in PAPERS], 'combos': COMBOS}
+    meta = {'papers': [{'id': p, 'label': l, 'group': g, 'prefix': pre, 'docs': keydocs.get(p, {}), 'mcq': sum(1 for q in qs if q['paper'] == p)} for p, l, g, pre in PAPERS], 'combos': COMBOS}
     for name, obj in [('manifest', man), ('questions', qs), ('subjective', subj), ('checklist', chk), ('documents', docs), ('meta', meta)]:
         with open(os.path.join(OUT, name + '.json'), 'w', encoding='utf-8') as fh:
             json.dump(obj, fh, ensure_ascii=False, separators=(',', ':'))

@@ -49,8 +49,11 @@
   const D = {}; // course data
   let paperById = {};
 
+  const DATA_V = '20261128';
+  let banks = null; // questions + subjective: large, loaded after the first screen
+  const loadBanks = () => (banks ||= Promise.all([loadJSON('questions'), loadJSON('subjective')]).then(([questions, subjective]) => { Object.assign(D, { questions, subjective }); }));
   async function loadJSON(name) {
-    const r = await fetch('site/data/' + name + '.json', { cache: 'no-cache' });
+    const r = await fetch('site/data/' + name + '.json?v=' + DATA_V, { cache: 'no-cache' });
     if (!r.ok) throw new Error('Could not load ' + name);
     return r.json();
   }
@@ -131,7 +134,7 @@
   const qstats = () => store.get('qstats', {});
   function recordAnswer(id, ok) { const s = qstats(); const r = s[id] || { c: 0, w: 0 }; ok ? r.c++ : r.w++; r.l = ok ? 1 : 0; r.t = Date.now(); s[id] = r; store.set('qstats', s); }
   const qById = () => (D._qById ||= Object.fromEntries(D.questions.map((q) => [q.id, q])));
-  const papersWithMCQ = () => (D._mcqP ||= [...new Set(D.questions.map((q) => q.paper))]);
+  const papersWithMCQ = () => (D._mcqP ||= D.meta.papers.filter((p) => p.mcq).map((p) => p.id));
   const visibleForPractice = (p) => paperById[p] && (paperById[p].group !== 'Optional' || comboSubjects().includes(p) || store.get('showAllOptionals', false));
 
   // ------------------------------------------------------------------ toast with undo
@@ -931,6 +934,12 @@
     const qi = raw.indexOf('?'); const h = decodeURI(qi < 0 ? raw : raw.slice(0, qi)); const q = new URLSearchParams(qi < 0 ? '' : raw.slice(qi + 1));
     const [, r = '', ...rest] = h.split('/'); const arg = rest.join('/');
     setActive(r); document.title = 'CSS Practice';
+    if (!D.questions && ['paper', 'interview', 'practice', 'exam', 'questions'].includes(r)) {
+      $('#main').innerHTML = '<div class="wrap loading">Loading the question banks…</div>';
+      const h0 = location.hash;
+      loadBanks().then(() => { if (location.hash === h0) route(); }).catch(() => { $('#main').innerHTML = '<div class="wrap"><div class="empty" style="margin-top:30px">The question banks did not load. Check your connection and reload the page.</div></div>'; });
+      return;
+    }
     if (r === 'doc' && arg) viewDoc(arg, q);
     else if (r === 'paper' && arg) viewPaper(arg);
     else if (r === 'interview') viewPaper('interview');
@@ -951,8 +960,8 @@
 
   async function init() {
     try {
-      const [manifest, questions, subjective, checklist, documents, meta] = await Promise.all(['manifest', 'questions', 'subjective', 'checklist', 'documents', 'meta'].map(loadJSON));
-      Object.assign(D, { manifest, questions, subjective, checklist, documents, meta });
+      const [manifest, checklist, documents, meta] = await Promise.all(['manifest', 'checklist', 'documents', 'meta'].map(loadJSON));
+      Object.assign(D, { manifest, checklist, documents, meta });
     } catch (e) {
       $('#main').innerHTML = '<div class="wrap"><div class="empty" style="margin-top:30px">The course data didn\'t load. If you opened this file straight from disk, serve the folder instead: run <code>python3 -m http.server</code> in it and open <code>http://localhost:8000</code>.</div></div>';
       return;
@@ -963,6 +972,10 @@
     drawNav();
     window.addEventListener('hashchange', route);
     route();
+    loadBanks().catch(() => { /* retried when a page needs them */ banks = null; });
   }
-  init();
+  init().catch((e) => {
+    const m = document.getElementById('main');
+    if (m) m.innerHTML = '<div class="wrap"><div class="empty" style="margin-top:30px">Something went wrong while opening the site. Reload the page; if it keeps happening, clear this site\'s data in your browser settings. <span class="small">(' + esc(e && e.message) + ')</span></div></div>';
+  });
 })();
